@@ -6,7 +6,25 @@
     <description>Recent content on Huyu&#39; Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 27 Dec 2022 00:54:21 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Feb 2023 17:18:34 +0800</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Vue3项目插件</title>
+      <link>http://localhost:1313/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Fri, 17 Feb 2023 17:18:34 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/</guid>
+      <description>Vue3项目插件 列举了一些 Vue项目中比较好用的插件 1、unplugin-auto-import 支持vue, vue-router, vue-i18n, @vueuse/head, @vueuse/core等</description>
+    </item>
+    
+    <item>
+      <title>Vscode常用插件</title>
+      <link>http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</link>
+      <pubDate>Fri, 17 Feb 2023 17:15:38 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</guid>
+      <description>一、基础的 1、Auto Rename Tag⭐ 修改标签会同步修改 2、Auto Import - ES6, TS, JSX, TSX 自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和</description>
+    </item>
+    
     <item>
       <title>关于我</title>
       <link>http://localhost:1313/about/</link>
@@ -22,7 +40,7 @@
       <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate>
       
       <guid>http://localhost:1313/post/my-first-post/</guid>
-      <description>这是我的第一篇博客 这是我的第一篇博客</description>
+      <description>这是我的第一篇博客 这是我的第一篇博客 hugo new post/vscode常用插件.md</description>
     </item>
     
   </channel>

@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2023-02-17T17:18:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2023-02-17T17:18:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2023-02-17T17:18:34+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    <lastmod>2023-02-17T17:15:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2023-02-17T13:00:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,20 +45,6 @@
   
   <url>
     <loc>http://localhost:1313/categories/hugo/</loc>
-    <lastmod>2022-12-27T00:54:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2022-12-27T00:54:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/</loc>
     <lastmod>2022-12-27T00:54:21+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

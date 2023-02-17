@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Vscode常用插件 - Huyu&#39; Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="huyu" /><meta name="description" content="一、基础的 1、Auto Rename Tag⭐ 修改标签会同步修改 2、Auto Import - ES6, TS, JSX, TSX 自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Vscode常用插件" />
+<meta property="og:description" content="一、基础的 1、Auto Rename Tag⭐ 修改标签会同步修改 2、Auto Import - ES6, TS, JSX, TSX 自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-02-17T17:15:38+08:00" />
+<meta property="article:modified_time" content="2023-02-17T17:15:38+08:00" />
+
+<meta itemprop="name" content="Vscode常用插件">
+<meta itemprop="description" content="一、基础的 1、Auto Rename Tag⭐ 修改标签会同步修改 2、Auto Import - ES6, TS, JSX, TSX 自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和"><meta itemprop="datePublished" content="2023-02-17T17:15:38+08:00" />
+<meta itemprop="dateModified" content="2023-02-17T17:15:38+08:00" />
+<meta itemprop="wordCount" content="929">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vscode常用插件"/>
+<meta name="twitter:description" content="一、基础的 1、Auto Rename Tag⭐ 修改标签会同步修改 2、Auto Import - ES6, TS, JSX, TSX 自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Huyu&#39; Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Huyu&#39; Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Vscode常用插件</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-02-17 </span>
+        
+          <span class="more-meta"> 约 929 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#一基础的">一、基础的</a>
+          <ul>
+            <li><a href="#1auto-rename-tag">1、Auto Rename Tag⭐</a></li>
+            <li><a href="#2auto-import---es6-ts-jsx-tsx">2、Auto Import - ES6, TS, JSX, TSX</a></li>
+            <li><a href="#3code-runner">3、Code Runner⭐</a></li>
+            <li><a href="#4css-peek">4、CSS Peek</a></li>
+            <li><a href="#5dotenv">5、DotENV</a></li>
+            <li><a href="#6error-lens">6、Error Lens</a></li>
+            <li><a href="#7eslint">7、ESLint</a></li>
+            <li><a href="#8gitlens--git-supercharged">8、GitLens — Git supercharged⭐</a></li>
+            <li><a href="#9javascript-es6-code-snippets">9、JavaScript (ES6) code snippets</a></li>
+            <li><a href="#10jsdoc">10、jsdoc</a></li>
+            <li><a href="#11npm-intellisense">11、npm Intellisense</a></li>
+            <li><a href="#12open-in-browser">12、open in browser</a></li>
+            <li><a href="#13path-intellisense">13、Path Intellisense⭐</a></li>
+            <li><a href="#14prettier---code-formatter">14、Prettier - Code formatter</a></li>
+            <li><a href="#15smart-click">15、Smart Click</a></li>
+            <li><a href="#16tabnine-ai">16、Tabnine AI⭐⭐</a></li>
+            <li><a href="#17turbo-console-log">17、Turbo Console Log</a></li>
+            <li><a href="#18vscode-extension-for-echarts">18、vscode extension for ECharts</a></li>
+            <li><a href="#19vscode-element-helper">19、vscode-element-helper</a></li>
+            <li><a href="#20path-alias">20、path-alias</a></li>
+            <li><a href="#21i18n-ally">21、i18n Ally⭐</a></li>
+            <li><a href="#22tailwind-css-intellisense">22、Tailwind CSS IntelliSense</a></li>
+            <li><a href="#23vue-helper">23、vue-helper</a></li>
+            <li><a href="#24json-to-ts">24、JSON to TS</a></li>
+          </ul>
+        </li>
+        <li><a href="#二vue相关的">二、Vue相关的</a>
+          <ul>
+            <li><a href="#1vue-3-snippets">1、Vue 3 Snippets</a></li>
+            <li><a href="#2vue-vscode-snippets">2、Vue VSCode Snippets</a></li>
+            <li><a href="#3vue-component">3、vue-component</a></li>
+            <li><a href="#4vuter">4、Vuter⭐⭐⭐</a></li>
+            <li><a href="#5vue-language-features-volar">5、Vue Language Features (Volar)⭐⭐⭐</a></li>
+            <li><a href="#6typescript-vue-plugin-volar">6、TypeScript Vue Plugin (Volar)</a></li>
+          </ul>
+        </li>
+        <li><a href="#三美化">三、美化</a>
+          <ul>
+            <li><a href="#1material-icon-theme">1、Material Icon Theme⭐</a></li>
+            <li><a href="#2vitesse-theme">2、Vitesse Theme⭐⭐⭐</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h2 id="一基础的">一、基础的</h2>
+<h3 id="1auto-rename-tag">1、Auto Rename Tag⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135509199.png" alt="image-20230104135509199"></p>
+<blockquote>
+<p><code>修改标签会同步修改</code></p>
+</blockquote>
+<h3 id="2auto-import---es6-ts-jsx-tsx">2、Auto Import - ES6, TS, JSX, TSX</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135612575.png" alt="image-20230104135612575"></p>
+<blockquote>
+<p>自动查找、解析并为所有可用导入提供代码操作和代码完成。适用于 JavaScript (ES6) 和 TypeScript (TS)</p>
+</blockquote>
+<h3 id="3code-runner">3、Code Runner⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135642398.png" alt="image-20230104135642398"></p>
+<blockquote>
+<p>快速运行 <code>调试js</code></p>
+</blockquote>
+<h3 id="4css-peek">4、CSS Peek</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/working.gif" alt="working"></p>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/working.gif" alt=""></p>
+<blockquote>
+<p>跳转对应 <code>css</code></p>
+</blockquote>
+<h3 id="5dotenv">5、DotENV</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135834335.png" alt="image-20230104135834335"></p>
+<blockquote>
+<p><code>高亮ENV文件</code></p>
+</blockquote>
+<h3 id="6error-lens">6、Error Lens</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135908882.png" alt="image-20230104135908882"></p>
+<blockquote>
+<p><code>显示错误</code></p>
+</blockquote>
+<h3 id="7eslint">7、ESLint</h3>
+<h3 id="8gitlens--git-supercharged">8、GitLens — Git supercharged⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104135949372.png" alt="image-20230104135949372"></p>
+<blockquote>
+<p>在每行代码查看代码是谁修改的</p>
+</blockquote>
+<h3 id="9javascript-es6-code-snippets">9、JavaScript (ES6) code snippets</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140007707.png" alt="image-20230104140007707"></p>
+<blockquote>
+<p><code>ES6代码块</code></p>
+</blockquote>
+<h3 id="10jsdoc">10、jsdoc</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140038243.png" alt="image-20230104140038243"></p>
+<blockquote>
+<p><code>快速生成函数注释</code></p>
+</blockquote>
+<h3 id="11npm-intellisense">11、npm Intellisense</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140135028.png" alt="image-20230104140135028"></p>
+<blockquote>
+<p>智能npm引入 &raquo;&gt; 没啥用</p>
+</blockquote>
+<h3 id="12open-in-browser">12、open in browser</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140224748.png" alt="image-20230104140224748"></p>
+<blockquote>
+<p>CTRL + B 在<code>浏览器打开 </code></p>
+</blockquote>
+<h3 id="13path-intellisense">13、Path Intellisense⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140257877.png" alt="image-20230104140257877"></p>
+<blockquote>
+<p>智能<code>路径</code>引入</p>
+</blockquote>
+<h3 id="14prettier---code-formatter">14、Prettier - Code formatter</h3>
+<h3 id="15smart-click">15、Smart Click</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140336602.png" alt="image-20230104140336602"></p>
+<blockquote>
+<p><code>双击标签，选中标签包裹的内容</code></p>
+</blockquote>
+<h3 id="16tabnine-ai">16、Tabnine AI⭐⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140439218.png" alt="image-20230104140439218"></p>
+<blockquote>
+<p><code>代码提示</code></p>
+</blockquote>
+<h3 id="17turbo-console-log">17、Turbo Console Log</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140506060.png" alt="image-20230104140506060"></p>
+<blockquote>
+<p>快速高效的<code>Console Log</code></p>
+</blockquote>
+<h3 id="18vscode-extension-for-echarts">18、vscode extension for ECharts</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140608693.png" alt="image-20230104140608693"></p>
+<blockquote>
+<p>智能提示 <code>echarts </code>的 options</p>
+</blockquote>
+<h3 id="19vscode-element-helper">19、vscode-element-helper</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140635575.png" alt="image-20230104140635575"></p>
+<blockquote>
+<p>智能提示<code>element-ui</code></p>
+</blockquote>
+<h3 id="20path-alias">20、path-alias</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140717079.png" alt="image-20230104140717079"></p>
+<blockquote>
+<p>一个可以解决路径别名提示，跳转的vscode插件 &raquo;&gt; 我测试的时候没啥用</p>
+</blockquote>
+<h3 id="21i18n-ally">21、i18n Ally⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230105102945850.png" alt="image-20230105102945850"></p>
+<blockquote>
+<p>i18n插件，实时预览，非常的好用,</p>
+<p>记得在settings.json中配置下面的代码</p>
+</blockquote>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.localesPaths&#34;</span><span class="p">:</span> <span class="s2">&#34;locales&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.keystyle&#34;</span><span class="p">:</span> <span class="s2">&#34;nested&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.sortKeys&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.namespace&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.enabledParsers&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;yaml&#34;</span><span class="p">,</span> <span class="s2">&#34;js&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.sourceLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;en&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.displayLanguage&#34;</span><span class="p">:</span> <span class="s2">&#34;zh-CN&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&#34;i18n-ally.enabledFrameworks&#34;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&#34;vue&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="22tailwind-css-intellisense">22、Tailwind CSS IntelliSense</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230105145048207.png" alt="下载Tailwind CSS"></p>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230105145216511.png" alt="Tailwind CSS效果"></p>
+<blockquote>
+<p>智能提示 <code>Tailwind CSS</code>语法</p>
+</blockquote>
+<h3 id="23vue-helper">23、vue-helper</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230107085841024.png" alt="image-20230107085841024"></p>
+<blockquote>
+<p>Vue2 组件跳转源码 包括 Element-UI 和 vux 和 iView，也可以比如输入el-table，可以生成一个骨架</p>
+</blockquote>
+<h3 id="24json-to-ts">24、JSON to TS</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230107144600771.png" alt="image-20230107144600771"></p>
+<blockquote>
+<p>Json数据一键转Ts</p>
+</blockquote>
+<h2 id="二vue相关的">二、Vue相关的</h2>
+<h3 id="1vue-3-snippets">1、Vue 3 Snippets</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140836503.png" alt="image-20230104140836503"></p>
+<blockquote>
+<p>这个插件基于最新的 Vue 2 及 Vue 3 的 API 添加了 Code Snippets（代码片段）。</p>
+</blockquote>
+<h3 id="2vue-vscode-snippets">2、Vue VSCode Snippets</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140944234.png" alt="image-20230104140944234"></p>
+<blockquote>
+<p>也是一个vue的代码片段</p>
+</blockquote>
+<h3 id="3vue-component">3、vue-component</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104141005999.png" alt="image-20230104141005999"></p>
+<blockquote>
+<p>智能引入自己写的组件 + 跳转组件 &raquo;&gt; 详情去看官方说明</p>
+</blockquote>
+<h3 id="4vuter">4、Vuter⭐⭐⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104141142220.png" alt="image-20230104141142220"></p>
+<blockquote>
+<p><strong>vue2项目必开插件</strong></p>
+</blockquote>
+<blockquote>
+<p><strong>注意！！！写 Vue2 项目使用<code>Vuter</code>, 写 Vue3 项目 用 <code>Volar</code>, 两个插件不可以共同使用，否则会冲突报错！！！</strong></p>
+</blockquote>
+<h3 id="5vue-language-features-volar">5、Vue Language Features (Volar)⭐⭐⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104141249104.png" alt="image-20230104141249104"></p>
+<blockquote>
+<p><strong>vue3项目必开插件</strong></p>
+</blockquote>
+<h3 id="6typescript-vue-plugin-volar">6、TypeScript Vue Plugin (Volar)</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104141445500.png" alt="image-20230104141445500"></p>
+<blockquote>
+<p>也是Vue3项目使用的插件，具体啥功能我也没去看</p>
+</blockquote>
+<h2 id="三美化">三、美化</h2>
+<h3 id="1material-icon-theme">1、Material Icon Theme⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140115548.png" alt="image-20230104140115548"></p>
+<blockquote>
+<p>图标</p>
+</blockquote>
+<h3 id="2vitesse-theme">2、Vitesse Theme⭐⭐⭐</h3>
+<p><img src="https://raw.githubusercontent.com/pan52yu/blogImg/main/image-20230104140554217.png" alt="image-20230104140554217"></p>
+<blockquote>
+<p>主题 &raquo;&gt; 推荐使用 <code>Vitesse Dark Soft</code></p>
+</blockquote>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">huyu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2023-02-17
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Vue3项目插件</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/my-first-post/">
+            <span class="next-text nav-default">我的第一篇博客</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/pan52yu" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>huyu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

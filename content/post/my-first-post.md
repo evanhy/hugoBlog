@@ -9,4 +9,5 @@ categories : [
 
 这是我的第一篇**博客**
 
+> hugo new post/vscode常用插件.md
 
