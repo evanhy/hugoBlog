@@ -5,7 +5,6 @@ title = "Huyu' Blog"
 preserveTaxonomyNames = true
 enableRobotsTXT = true
 enableEmoji = true
-# theme = "PaperMod"
 theme = "even"
 enableGitInfo = false # use git commit log to generate lastmod record # 可根据 Git 中的提交生成最近更新记录。
 
@@ -49,12 +48,18 @@ name = "分类"
 weight = 40
 identifier = "categories"
 url = "/categories/"
+[[menu.main]]
+name = "关于"
+weight = 50
+identifier = "about"
+url = "/about/"
+
 
 [params]
 version = "4.x"           # Used to give a friendly message when you have an incompatible update
 debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
-since = "2017"            # Site creation time          # 站点建立时间
+since = "2023"            # Site creation time          # 站点建立时间
 # use public git repo url to link lastmod git commit, enableGitInfo should be true.
 # 指定 git 仓库地址，可以生成指向最近更新的 git commit 的链接，需要将 enableGitInfo 设置成 true.
 gitRepo = ""
@@ -64,17 +69,18 @@ logoTitle = "Huyu' Blog"        # default: the title value    # 默认值: 上�
 keywords = ["Hugo", "theme","even"]
 description = "Hugo theme even example site."
 
+paginate = 10  # 首页每页显示的文章数
 # paginate of archives, tags and categories             # 归档、标签、分类每页显示的文章数目，建议修改为一个较大的值
 archivePaginate = 50
 
 # show 'xx Posts In Total' in archive page ?            # 是否在归档页显示文章的总数
-showArchiveCount = false
+showArchiveCount = true
 
 # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
 dateFormatToUse = "2006-01-02"
 
 # show word count and read time ?                       # 是否显示字数统计与阅读时间
-moreMeta = false
+moreMeta = true
 
 # Syntax highlighting by highlight.js
 highlightInClient = false
@@ -141,8 +147,10 @@ clientId = ""           # Your client ID
 clientSecret = ""       # Your client secret
 
 [params.utterances]       # https://utteranc.es/
-owner = ""              # Your GitHub ID
-repo = ""               # The repo to store comments
+enable = true
+owner = "pan52yu"              # Your GitHub ID
+repo = "pan52yu/hugoblogtalks"               # The repo to store comments
+theme = "github-light"
 
 [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
 owner = ""              # Your GitHub ID
@@ -189,7 +197,7 @@ c-twitter = "http://localhost:1313"
 d-facebook = "http://localhost:1313"
 e-linkedin = "http://localhost:1313"
 f-google = "http://localhost:1313"
-g-github = "http://localhost:1313"
+g-github = "https://github.com/pan52yu"
 h-weibo = "http://localhost:1313"
 i-zhihu = "http://localhost:1313"
 j-douban = "http://localhost:1313"
