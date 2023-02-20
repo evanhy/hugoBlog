@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>异步笔试题 - Huyu&#39; Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="huyu" /><meta name="description" content="异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&amp;#39;async1 start&amp;#39;); await async2(); console.log(&amp;#39;async1 end&amp;#39;); } async function async2() { console.log(&amp;#39;async2&amp;#39;); } console.log(&amp;#39;script start&amp;#39;); setTimeout(function() { console.log(&amp;#39;setTimeout&amp;#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&amp;#39;promise1&amp;#39;); resolve(); }).then(function() { console.log(&amp;#39;promise2&amp;#39;);" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.a7c3372b17782ac7f2fa8c3cd7f2508f64a1456f433e3f82db4be08802b35f05.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="异步笔试题" />
+<meta property="og:description" content="异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&#39;async1 start&#39;); await async2(); console.log(&#39;async1 end&#39;); } async function async2() { console.log(&#39;async2&#39;); } console.log(&#39;script start&#39;); setTimeout(function() { console.log(&#39;setTimeout&#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&#39;promise1&#39;); resolve(); }).then(function() { console.log(&#39;promise2&#39;);" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-10-29T21:10:51+00:00" />
+<meta property="article:modified_time" content="2021-10-29T21:10:51+00:00" />
+
+<meta itemprop="name" content="异步笔试题">
+<meta itemprop="description" content="异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&#39;async1 start&#39;); await async2(); console.log(&#39;async1 end&#39;); } async function async2() { console.log(&#39;async2&#39;); } console.log(&#39;script start&#39;); setTimeout(function() { console.log(&#39;setTimeout&#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&#39;promise1&#39;); resolve(); }).then(function() { console.log(&#39;promise2&#39;);"><meta itemprop="datePublished" content="2021-10-29T21:10:51+00:00" />
+<meta itemprop="dateModified" content="2021-10-29T21:10:51+00:00" />
+<meta itemprop="wordCount" content="3420">
+<meta itemprop="keywords" content="js," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="异步笔试题"/>
+<meta name="twitter:description" content="异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&#39;async1 start&#39;); await async2(); console.log(&#39;async1 end&#39;); } async function async2() { console.log(&#39;async2&#39;); } console.log(&#39;script start&#39;); setTimeout(function() { console.log(&#39;setTimeout&#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&#39;promise1&#39;); resolve(); }).then(function() { console.log(&#39;promise2&#39;);"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Huyu&#39; Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Huyu&#39; Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">异步笔试题</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-10-29 </span>
+        <div class="post-category">
+            <a href="/categories/%E9%9D%A2%E8%AF%95/"> 面试 </a>
+            </div>
+          <span class="more-meta"> 约 3420 字 </span>
+          <span class="more-meta"> 预计阅读 7 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#任务队列"><strong>任务队列</strong></a></li>
+            <li><a href="#宏任务"><strong>宏任务</strong></a></li>
+            <li><a href="#微任务"><strong>微任务</strong></a></li>
+            <li><a href="#运行机制"><strong>运行机制</strong></a></li>
+            <li><a href="#promise和async中的立即执行"><strong>Promise和async中的立即执行</strong></a></li>
+            <li><a href="#await做了什么"><strong>await做了什么</strong></a></li>
+            <li><a href="#回到本题"><strong>回到本题</strong></a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#变式一"><strong>变式一</strong></a></li>
+    <li><a href="#变式二"><strong>变式二</strong></a></li>
+    <li><a href="#变式三"><strong>变式三</strong></a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <blockquote>
+<p>异步笔试题</p>
+</blockquote>
+<p>请写出下面代码的运行结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="nx">async2</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 end&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async2</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async2&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise2&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script end&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这道题主要考察的是事件循环中函数执行顺序的问题，其中包括<code>async</code>，<code>await</code>，<code>setTimeout</code>，<code>Promise</code>函数。下面来说一下本题中涉及到的知识点。</p>
+<h3 id="任务队列"><strong>任务队列</strong></h3>
+<p>​	首先我们需要明白以下几件事情：</p>
+<ul>
+<li>JS分为同步任务和异步任务</li>
+<li>同步任务都在主线程上执行，形成一个执行栈</li>
+<li>主线程之外，事件触发线程管理着一个任务队列，只要异步任务有了运行结果，就在任务队列之中放置一个事件。</li>
+<li>一旦执行栈中的所有同步任务执行完毕（此时JS引擎空闲），系统就会读取任务队列，将可运行的异步任务添加到可执行栈中，开始执行。</li>
+</ul>
+<p>​	根据规范，事件循环是通过<a href="https://www.w3.org/TR/html5/webappapis.html#task-queues">任务队列</a>的机制来进行协调的。一个 Event Loop 中，可以有一个或者多个任务队列(task queue)，一个任务队列便是一系列有序任务(task)的集合；<strong>每个任务都有一个任务源(task source)，源自同一个任务源的 task 必须放到同一个任务队列，从不同源来的则被添加到不同队列。</strong> setTimeout/Promise 等API便是任务源，而进入任务队列的是他们指定的具体执行任务。</p>
+<p>​	<a href="https://camo.githubusercontent.com/569f3f8af4ef408bf1c8e86ef1a0c593a6b2a678e1ab36fb1d641d1f292dce08/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643764383530353663372e706e67"><img src="https://camo.githubusercontent.com/569f3f8af4ef408bf1c8e86ef1a0c593a6b2a678e1ab36fb1d641d1f292dce08/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643764383530353663372e706e67" alt="img"></a></p>
+<h3 id="宏任务"><strong>宏任务</strong></h3>
+<p>​	(macro)task（又称之为宏任务），可以理解是每次执行栈执行的代码就是一个宏任务（包括每次从事件队列中获取一个事件回调并放到执行栈中执行）。</p>
+<p>​	浏览器为了能够使得JS内部(macro)task与DOM任务能够有序的执行，<strong>会在一个(macro)task执行结束后，在下一个(macro)task 执行开始前，对页面进行重新渲染</strong>，流程如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">(</span><span class="nx">macro</span><span class="p">)</span><span class="nx">task</span><span class="o">-&gt;</span><span class="nx">渲染</span><span class="o">-&gt;</span><span class="p">(</span><span class="nx">macro</span><span class="p">)</span><span class="nx">task</span><span class="o">-&gt;</span><span class="p">...</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>(macro)task主要包含：script(整体代码)、setTimeout、setInterval、I/O、UI交互事件、postMessage、MessageChannel、setImmediate(Node.js 环境)</p>
+<h3 id="微任务"><strong>微任务</strong></h3>
+<p>​	microtask（又称为微任务），<strong>可以理解是在当前 task 执行结束后立即执行的任务</strong>。也就是说，在当前task任务后，下一个task之前，在渲染之前。</p>
+<p>​	所以它的响应速度相比setTimeout（setTimeout是task）会更快，因为无需等渲染。也就是说，在某一个macrotask执行完后，就会将在它执行期间产生的所有microtask都执行完毕（在渲染前）。</p>
+<p>​	microtask主要包含：Promise.then、MutaionObserver、process.nextTick(Node.js 环境)</p>
+<h3 id="运行机制"><strong>运行机制</strong></h3>
+<p>​	在事件循环中，每进行一次循环操作称为 tick，每一次 tick 的任务<a href="https://www.w3.org/TR/html5/webappapis.html#event-loops-processing-model">处理模型</a>是比较复杂的，但关键步骤如下：</p>
+<ul>
+<li>执行一个宏任务（栈中没有就从事件队列中获取）</li>
+<li>执行过程中如果遇到微任务，就将它添加到微任务的任务队列中</li>
+<li>宏任务执行完毕后，立即执行当前微任务队列中的所有微任务（依次执行）</li>
+<li>当前宏任务执行完毕，开始检查渲染，然后GUI线程接管渲染</li>
+<li>渲染完毕后，JS线程继续接管，开始下一个宏任务（从事件队列中获取）</li>
+</ul>
+<p>​	流程图如下：</p>
+<p>​	<a href="https://camo.githubusercontent.com/6960fe108d5b5064db1751528fc65ed70f08be3f40c25024ceef66370f4ef1b3/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643661353238626461662e6a7067"><img src="https://camo.githubusercontent.com/6960fe108d5b5064db1751528fc65ed70f08be3f40c25024ceef66370f4ef1b3/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643661353238626461662e6a7067" alt="img"></a></p>
+<h3 id="promise和async中的立即执行"><strong>Promise和async中的立即执行</strong></h3>
+<p>我们知道Promise中的异步体现在<code>then</code>和<code>catch</code>中，所以写在Promise中的代码是被当做同步任务立即执行的。而在async/await中，在出现await出现之前，其中的代码也是立即执行的。那么出现了await时候发生了什么呢？</p>
+<h3 id="await做了什么"><strong>await做了什么</strong></h3>
+<p>​	从字面意思上看await就是等待，await 等待的是一个表达式，这个表达式的返回值可以是一个promise对象也可以是其他值。</p>
+<p>​	很多人以为await会一直等待之后的表达式执行完之后才会继续执行后面的代码，<strong>实际上await是一个让出线程的标志。await后面的表达式会先执行一遍，将await后面的代码加入到microtask中，然后就会跳出整个async函数来执行后面的代码。</strong></p>
+<p>​	由于因为async await 本身就是promise+generator的语法糖。所以await后面的代码是microtask。所以对于本题中的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="kr">await</span> <span class="nx">async2</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 end&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>等价于</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">	<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">	<span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">async2</span><span class="p">()).</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 end&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="回到本题"><strong>回到本题</strong></h3>
+<p>​	以上就本道题涉及到的所有相关知识点了，下面我们再回到这道题来一步一步看看怎么回事儿。</p>
+<ol>
+<li>首先，事件循环从宏任务(macrotask)队列开始，这个时候，宏任务队列中，只有一个script(整体代码)任务；当遇到任务源(task source)时，则会先分发任务到对应的任务队列中去。所以，上面例子的第一步执行如下图所示：</li>
+</ol>
+<p><a href="https://camo.githubusercontent.com/5f236daf1f85b04ffae36a526b7a50aaa4331d58b43b99cdf7c8703c94ead6e4/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643639623432316166332e706e67"><img src="https://camo.githubusercontent.com/5f236daf1f85b04ffae36a526b7a50aaa4331d58b43b99cdf7c8703c94ead6e4/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643639623432316166332e706e67" alt="img"></a></p>
+<p>2.然后我们看到首先定义了两个async函数，接着往下看，然后遇到了 <code>console</code> 语句，直接输出 <code>script start</code>。输出之后，script 任务继续往下执行，遇到 <code>setTimeout</code>，其作为一个宏任务源，则会先将其任务分发到对应的队列中：</p>
+<p><a href="https://camo.githubusercontent.com/2022ffd886068fcd25518f4c7528c2baec00afd0d895f985a5f599d9d03821dd/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643639623432353530612e706e67"><img src="https://camo.githubusercontent.com/2022ffd886068fcd25518f4c7528c2baec00afd0d895f985a5f599d9d03821dd/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f30382f356335643639623432353530612e706e67" alt="img"></a></p>
+<p>3.script 任务继续往下执行，执行了async1()函数，前面讲过async函数中在await之前的代码是立即执行的，所以会立即输出<code>async1 start</code>。</p>
+<p>遇到了await时，会将await后面的表达式执行一遍，所以就紧接着输出<code>async2</code>，然后将await后面的代码也就是<code>console.log('async1 end')</code>加入到microtask中的Promise队列中，接着跳出async1函数来执行后面的代码。</p>
+<p><a href="https://camo.githubusercontent.com/88b70d88483e46afee14e2b69072fb1759cddef336ea79a7329e895512283657/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f31382f356336616435383333376165642e706e67"><img src="https://camo.githubusercontent.com/88b70d88483e46afee14e2b69072fb1759cddef336ea79a7329e895512283657/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f31382f356336616435383333376165642e706e67" alt="img"></a></p>
+<p>4.script任务继续往下执行，遇到Promise实例。由于Promise中的函数是立即执行的，而后续的 <code>.then</code> 则会被分发到 microtask 的 <code>Promise</code> 队列中去。所以会先输出 <code>promise1</code>，然后执行 <code>resolve</code>，将 <code>promise2</code> 分配到对应队列。</p>
+<p><a href="https://camo.githubusercontent.com/0916cb5a9c1704fe199de69944ae7929ebe59b9ef3b3cd49961de26accd98fa9/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f31382f356336616435383334376135652e706e67"><img src="https://camo.githubusercontent.com/0916cb5a9c1704fe199de69944ae7929ebe59b9ef3b3cd49961de26accd98fa9/68747470733a2f2f692e6c6f6c692e6e65742f323031392f30322f31382f356336616435383334376135652e706e67" alt="img"></a></p>
+<p>5.script任务继续往下执行，最后只有一句输出了 <code>script end</code>，至此，全局任务就执行完毕了。</p>
+<p>根据上述，每次执行完一个宏任务之后，会去检查是否存在 Microtasks；如果有，则执行 Microtasks 直至清空 Microtask Queue。</p>
+<p>因而在script任务执行完毕之后，开始查找清空微任务队列。此时，微任务中， <code>Promise</code> 队列有的两个任务<code>async1 end</code>和<code>promise2</code>，因此按先后顺序输出 <code>async1 end，promise2</code>。当所有的 Microtasks 执行完毕之后，表示第一轮的循环就结束了。</p>
+<p>6.第二轮循环开始，这个时候就会跳回async1函数中执行后面的代码，然后遇到了同步任务 <code>console</code> 语句，直接输出 <code>async1 end</code>。这样第二轮的循环就结束了。（也可以理解为被加入到script任务队列中，所以会先与setTimeout队列执行）</p>
+<p>7.第二轮循环依旧从宏任务队列开始。此时宏任务中只有一个 <code>setTimeout</code>，取出直接输出即可，至此整个流程结束。</p>
+<p><strong>下面我会改变一下代码来加深印象</strong></p>
+<h1 id="变式一"><strong>变式一</strong></h1>
+<p>在第一个变式中我将async2中的函数也变成了Promise函数，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="nx">async2</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 end&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async2</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//async2做出如下更改：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise2&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise3&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise4&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script end&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以先自己看看输出顺序会是什么，下面来公布结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">end</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span> <span class="nx">end</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise4</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在第一次macrotask执行完之后，也就是输出<code>script end</code>之后，会去清理所有microtask。所以会相继输出<code>promise2</code>，<code>async1 end</code>，<code>promise4</code>，其余不再多说。</p>
+<h1 id="变式二"><strong>变式二</strong></h1>
+<p>在第二个变式中，我将async1中await后面的代码和async2的代码都改为异步的，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async1</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;async1 start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="nx">async2</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//更改如下：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">async2</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//更改如下：
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>	<span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">		<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">	<span class="p">},</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script start&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout3&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">new</span> <span class="nb">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise1&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl"><span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise2&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script end&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>可以先自己看看输出顺序会是什么，下面来公布结果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">async1</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">end</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在输出为<code>promise2</code>之后，接下来会按照加入setTimeout队列的顺序来依次输出，通过代码我们可以看到加入顺序为<code>3 2 1</code>，所以会按3，2，1的顺序来输出。</p>
+<h1 id="变式三"><strong>变式三</strong></h1>
+<p>变式三是我在一篇面经中看到的原题，整体来说大同小异，代码如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">a1</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;a1 start&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">await</span> <span class="nx">a2</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;a1 end&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="kr">async</span> <span class="kd">function</span> <span class="nx">a2</span> <span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;a2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script start&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;setTimeout&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">},</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise1&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">a1</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">promise2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;promise2.then&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise2&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">promise2</span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">res</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;promise3&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;script end&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>无非是在微任务那块儿做点文章，前面的内容如果你都看懂了的话这道题一定没问题的，结果如下：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a1</span> <span class="nx">start</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise2</span>
+</span></span><span class="line"><span class="cl"><span class="nx">script</span> <span class="nx">end</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise1</span>
+</span></span><span class="line"><span class="cl"><span class="nx">a1</span> <span class="nx">end</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise2</span><span class="p">.</span><span class="nx">then</span>
+</span></span><span class="line"><span class="cl"><span class="nx">promise3</span>
+</span></span><span class="line"><span class="cl"><span class="nx">setTimeout</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">huyu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-10-29
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/js/">js</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">HTTP相关知识</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/">
+            <span class="next-text nav-default">H5-C3知识点总结</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/pan52yu" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>huyu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+<script>
+	function createCopyButton(highlightDiv) {
+		const div = document.createElement("div");
+		div.className = "copy-code";
+		div.innerText = "Copy";
+		div.addEventListener("click", () =>
+			copyCodeToClipboard(div, highlightDiv)
+		);
+		addCopyButtonToDom(div, highlightDiv);
+	}
+
+	async function copyCodeToClipboard(button, highlightDiv) {
+		const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+			.innerText;
+		await navigator.clipboard.writeText(codeToCopy);
+		button.blur();
+		button.innerText = "Copied!";
+		setTimeout(() => button.innerText = "Copy", 2000);
+	}
+
+	function addCopyButtonToDom(button, highlightDiv) {
+		highlightDiv.insertBefore(button, highlightDiv.firstChild);
+		const wrapper = document.createElement("div");
+		wrapper.className = "highlight-wrapper";
+		highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+		wrapper.appendChild(highlightDiv);
+	}
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if(!isMobile){
+		document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+	}
+</script>
+
+
+</body>
+</html>

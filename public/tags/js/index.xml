@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>js on Huyu&#39; Blog</title>
+    <link>http://localhost:1313/tags/js/</link>
+    <description>Recent content in js on Huyu&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 23 Oct 2022 22:10:07 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/js/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Javascript 注释规范</title>
+      <link>http://localhost:1313/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 23 Oct 2022 22:10:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</guid>
+      <description>Javascript 代码注释规范 一、语法 注释的说明 语法：写在注释块第一行 1 2 3 4 5 6 7 /** * events-function(这是注释的说明) * @description 切换音频播放状态</description>
+    </item>
+    
+    <item>
+      <title>如何优雅处理 async await 错误</title>
+      <link>http://localhost:1313/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Wed, 19 Oct 2022 10:02:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</guid>
+      <description>借用 await-to-js 库 https://github.com/scopsy/await-to-js https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/ 之前处理异步请求时是这样的： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 async asyncTask() { try { const asyncFuncARes = await asyncFuncA() } catch(error) { return new Error(error) } try { const asyncFuncBRes = await asyncFuncB(asyncFuncARes) } catch(error) { return new Error(error) } try {</description>
+    </item>
+    
+    <item>
+      <title>pdf预览</title>
+      <link>http://localhost:1313/post/04.pdf%E9%A2%84%E8%A7%88/</link>
+      <pubDate>Mon, 03 Oct 2022 14:51:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/04.pdf%E9%A2%84%E8%A7%88/</guid>
+      <description>参考文献 https://www.cnblogs.com/songyaru/p/15078091.html 实现方式 不使用插件直接进行pdf预览时，对于小文件没有任何问题，但在预览一个305M，近400页的pdf文件，打开pdf直接拉到最</description>
+    </item>
+    
+    <item>
+      <title>继承</title>
+      <link>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Wed, 28 Sep 2022 10:28:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</guid>
+      <description>首先，继承的是 属性 和 原型方法 ES6 继承 ES6：https://es6.ruanyifeng.com/#docs/class-extends Class 可以</description>
+    </item>
+    
+    <item>
+      <title>配置ESLint和Prettier</title>
+      <link>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</link>
+      <pubDate>Fri, 16 Sep 2022 14:38:37 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</guid>
+      <description>1、为什么要使用 ESLint 和 Prettier 代码规范是软件开发领域经久不衰的话题，随着前端应用的大型化和复杂化，越来越多的前端团队开始重视 JavaScript 代码规范。不以规矩，不</description>
+    </item>
+    
+    <item>
+      <title>判断一个对象上是否存在一个属性</title>
+      <link>http://localhost:1313/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Mon, 29 Aug 2022 20:06:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</guid>
+      <description>一、js判断一个对象是否为空 方法一： 1 2 3 4 5 6 7 8 9 10 let obj1 = {} let obj2 = {a:1} function empty(obj){ for (let key in obj){ return false; //非空 } return true; //为空 } console.log(empty(obj1)) // 输出 true 为空 console.log(empty(obj2)) //输出 false</description>
+    </item>
+    
+    <item>
+      <title>js知识点总结</title>
+      <link>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 09 Feb 2022 17:09:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <description>1、手动实现防抖和节流 防抖：事件被触发 n 秒后再执行回调，如果在这 n 秒内事件又被触发，则重新计时,，防止在短时间内过于频繁的执行相同的任务。当</description>
+    </item>
+    
+    <item>
+      <title>异步笔试题</title>
+      <link>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Fri, 29 Oct 2021 21:10:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</guid>
+      <description>异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&amp;#39;async1 start&amp;#39;); await async2(); console.log(&amp;#39;async1 end&amp;#39;); } async function async2() { console.log(&amp;#39;async2&amp;#39;); } console.log(&amp;#39;script start&amp;#39;); setTimeout(function() { console.log(&amp;#39;setTimeout&amp;#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&amp;#39;promise1&amp;#39;); resolve(); }).then(function() { console.log(&amp;#39;promise2&amp;#39;);</description>
+    </item>
+    
+    <item>
+      <title>HTTP缓存</title>
+      <link>http://localhost:1313/post/11.http%E7%BC%93%E5%AD%98/</link>
+      <pubDate>Wed, 29 Sep 2021 21:09:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/11.http%E7%BC%93%E5%AD%98/</guid>
+      <description>https://juejin.cn/post/6844904153043435533#heading-1</description>
+    </item>
+    
+  </channel>
+</rss>

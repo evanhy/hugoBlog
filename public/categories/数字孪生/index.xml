@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数字孪生 on Huyu&#39; Blog</title>
+    <link>http://localhost:1313/categories/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</link>
+    <description>Recent content in 数字孪生 on Huyu&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 Jun 2022 15:13:58 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>51world(数字孪生)</title>
+      <link>http://localhost:1313/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</link>
+      <pubDate>Sat, 18 Jun 2022 15:13:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</guid>
+      <description>💡 概念解释：数字孪生是充分利用物理模型、传感器更新、运行历史等数据，集成多学科、多物理量、多尺度、多概率的仿真过程，在虚拟空间中完成映射，从</description>
+    </item>
+    
+  </channel>
+</rss>

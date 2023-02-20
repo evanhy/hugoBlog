@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>配置ESLint和Prettier - Huyu&#39; Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="huyu" /><meta name="description" content="ESLint 和 Prettier" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.a7c3372b17782ac7f2fa8c3cd7f2508f64a1456f433e3f82db4be08802b35f05.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="配置ESLint和Prettier" />
+<meta property="og:description" content="ESLint 和 Prettier" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-09-16T14:38:37+00:00" />
+<meta property="article:modified_time" content="2022-09-16T14:38:37+00:00" />
+
+<meta itemprop="name" content="配置ESLint和Prettier">
+<meta itemprop="description" content="ESLint 和 Prettier"><meta itemprop="datePublished" content="2022-09-16T14:38:37+00:00" />
+<meta itemprop="dateModified" content="2022-09-16T14:38:37+00:00" />
+<meta itemprop="wordCount" content="1487">
+<meta itemprop="keywords" content="js," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="配置ESLint和Prettier"/>
+<meta name="twitter:description" content="ESLint 和 Prettier"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Huyu&#39; Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Huyu&#39; Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">配置ESLint和Prettier</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-09-16 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8F%90%E5%8D%87/"> 提升 </a>
+            </div>
+          <span class="more-meta"> 约 1487 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li>
+          <ul>
+            <li></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h4 id="1为什么要使用-eslint-和-prettier">1、为什么要使用 ESLint 和 Prettier</h4>
+<blockquote>
+<p>代码规范是软件开发领域经久不衰的话题，随着前端应用的大型化和复杂化，越来越多的前端团队开始重视 <code>JavaScript</code> 代码规范。不以规矩，不能成方圆</p>
+</blockquote>
+<h4 id="2eslint">2、ESlint</h4>
+<blockquote>
+<p>如果项目目录下有多个配置文件，ESLint 只会使用一个，优先级为：<code>.eslintrc.js</code> &gt; <code>.eslintrc</code> &gt; <code>package.json</code></p>
+</blockquote>
+<h6 id="-安装-eslint">&gt; 安装 ESlint</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="c1"># 删除原来的依赖</span>
+</span></span><span class="line"><span class="cl">npm rm @vue/cli-plugin-eslint @vue/eslint-config-prettier babel-eslint eslint eslint-plugin-prettier eslint-plugin-vue prettier
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 安装 依赖</span>
+</span></span><span class="line"><span class="cl">npm install @vue/cli-plugin-eslint@4.4.6 @vue/eslint-config-prettier@7.0.0 babel-eslint eslint@7.15.0 eslint-plugin-prettier@3.4.1 eslint-plugin-vue@7.2.0 prettier@2.5.1 --save-dev
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 如果安装报错</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># --legacy-peer-deps：安装时忽略所有peerDependencies，忽视依赖冲突，采用npm版本4到版本6的样式去安装依赖，已有的依赖不会覆盖。建议用--legacy-peer-deps 比较保险一点</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># --force 会无视冲突，并强制获取远端npm库资源，当有资源冲突时覆盖掉原先的版本。</span>
+</span></span><span class="line"><span class="cl">npm install @vue/cli-plugin-eslint @vue/eslint-config-prettier babel-eslint eslint eslint-plugin-prettier eslint-plugin-vue prettier --save-dev --legacy-peer-deps
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>在 package.json 文件中添加或替换 lint 命令</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl">  <span class="s2">&#34;scripts&#34;</span><span class="err">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;lint&#34;</span><span class="p">:</span> <span class="s2">&#34;eslint --fix --ext .js,.vue src/&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span><span class="err">,</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npm run lint <span class="c1"># 需要进行一键修复的时候就执行命令</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h6 id="-eslintrcjs配置">&gt; .eslintrc.js配置</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">root</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 当前项目使用这个配置文件, 不会往父级目录找.eslintrc.js文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">env</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 指定eslint启动环境(vuecli底层是node支持), browser: true也可以在浏览器设置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">node</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="kr">extends</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 扩展配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;eslint:recommended&#34;</span><span class="p">,</span> <span class="c1">// 这个扩展包帮我们启用了一系列核心规则，这些规则是在 rules（https://cn.eslint.org/docs/rules/）页面 中被标记为 ✅ 的常见问题
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;plugin:vue/recommended&#34;</span><span class="p">,</span> <span class="c1">// vue模板格式化更严格
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;plugin:prettier/recommended&#34;</span><span class="p">,</span> <span class="c1">// 添加 prettier 插件 解决 eslint 和 prettier 的冲突
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;plugin:vue/essential&#34;</span><span class="p">,</span> <span class="c1">// vue里必须的规则
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;@vue/prettier&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">],</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">parserOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 扩展配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 对新语法使用eslint
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">parser</span><span class="o">:</span> <span class="s2">&#34;babel-eslint&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//   &#34;off&#34; or 0 - 关闭规则
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//   &#34;warn&#34; or 1 - 将规则视为一个警告（不会影响退出码）,只警告，不会退出程序
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//   &#34;error&#34; or 2 - 将规则视为一个错误 (退出码为1)，报错并退出程序
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">rules</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;no-console&#34;</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NODE_ENV</span> <span class="o">===</span> <span class="s2">&#34;production&#34;</span> <span class="o">?</span> <span class="s2">&#34;warn&#34;</span> <span class="o">:</span> <span class="s2">&#34;off&#34;</span><span class="p">,</span> <span class="c1">// 上线环境用打印就报警告, 开发环境关闭此规则
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;no-debugger&#34;</span><span class="o">:</span> <span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NODE_ENV</span> <span class="o">===</span> <span class="s2">&#34;production&#34;</span> <span class="o">?</span> <span class="s2">&#34;warn&#34;</span> <span class="o">:</span> <span class="s2">&#34;off&#34;</span><span class="p">,</span> <span class="c1">// debugger可以终止代码执行
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="s2">&#34;prettier/prettier&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&#34;error&#34;</span><span class="p">,</span> <span class="p">{</span> <span class="nx">endOfLine</span><span class="o">:</span> <span class="s2">&#34;auto&#34;</span> <span class="p">}],</span> <span class="c1">// 解决 Delete `␍`eslint(prettier/prettier) 错误
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">};</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="3prettier">3、Prettier</h4>
+<h6 id="-根目录创建并配置-prettierrc-文件">&gt; 根目录创建并配置 <code>.prettierrc</code> 文件</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;tabWidth&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;printWidth&#34;</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;useTabs&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;semi&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;singleQuote&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;TrailingComma&#34;</span><span class="p">:</span> <span class="s2">&#34;all&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;bracketSpacing&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;jsxBracketSameLine&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;arrowParens&#34;</span><span class="p">:</span> <span class="s2">&#34;avoid&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h6 id="-命令行格式化所有文件">&gt; 命令行格式化所有文件</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">npx prettier --write . <span class="c1">#格式化所有文件</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p><strong>！！！ 配置完记得重启vscode</strong></p>
+</blockquote>
+<h4 id="4插件安装">4、插件安装</h4>
+<h6 id="prettier-插件安装">Prettier 插件安装</h6>
+<blockquote>
+<p>安装插件 <code>Prettier - Code formatter</code></p>
+<p><img src="https://huyu-blog.oss-cn-hangzhou.aliyuncs.com/img/1.webp?x-oss-process=style/huyu" alt="Prettier"></p>
+</blockquote>
+<h6 id="eslint-插件安装">ESLint 插件安装</h6>
+<blockquote>
+<p>安装插件 <code>ESLint</code></p>
+<p><img src="https://huyu-blog.oss-cn-hangzhou.aliyuncs.com/img/2.webp?x-oss-process=style/huyu" alt="ESLint"></p>
+</blockquote>
+<ul>
+<li>添加配置项</li>
+</ul>
+<p><img src="https://huyu-blog.oss-cn-hangzhou.aliyuncs.com/img/3.webp?x-oss-process=style/huyu" alt="vscode配置项"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 将prettier设置为默认格式化程序(在编辑器中有可能被其他Formatter占用，所以将prettier设置为默认Formatter)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nt">&#34;editor.defaultFormatter&#34;</span><span class="p">:</span> <span class="s2">&#34;esbenp.prettier-vscode&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 保存时自动格式化 (根据根目录下‘.prettierrc文件配置项’)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nt">&#34;editor.formatOnSave&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// Enable per-language
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nt">&#34;[javascript]&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;editor.defaultFormatter&#34;</span><span class="p">:</span> <span class="s2">&#34;esbenp.prettier-vscode&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;editor.formatOnSave&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// 为ESLint启用“保存时自动修复”，并且仍然具有格式和快速修复功能
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>  <span class="nt">&#34;editor.codeActionsOnSave&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;source.fixAll&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&#34;source.fixAll.eslint&#34;</span><span class="p">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="5配置项含义">5、配置项含义</h4>
+<h6 id="prettierrc文件常见配置">.prettierrc文件常见配置</h6>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// tab缩进大小,默认为2
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;tabWidth&#34;</span><span class="p">:</span> <span class="mi">4</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 行长规则 默认为120
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;printWidth&#34;</span><span class="p">:</span> <span class="mi">120</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 使用tab缩进，默认false true 使用tab缩进 false 使用空格缩进
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;useTabs&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 使用分号, 默认true true 有分号 false 没有分号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;semi&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 使用单引号, 默认false false 双引号 true 单引号 (在jsx中配置无效, 默认都是双引号)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;singleQuote&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 行尾逗号,默认 none,可选 none|es5|all
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// es5 包括es5中的数组、对象
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// all 包括函数对象等所有可选
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;TrailingComma&#34;</span><span class="p">:</span> <span class="s2">&#34;all&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 对象中的空格 默认true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// true: { foo: bar } false: {foo: bar}
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;bracketSpacing&#34;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// JSX标签闭合位置 默认false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// false: &lt;div
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//          className=&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//          style={{}}
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//       &gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// true: &lt;div
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//          className=&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">//          style={{}} &gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;jsxBracketSameLine&#34;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 箭头函数参数括号 默认avoid 可选 avoid| always
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// avoid 能省略括号的时候就省略 例如x =&gt; x
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="c1">// always 总是有括号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nt">&#34;arrowParens&#34;</span><span class="p">:</span> <span class="s2">&#34;avoid&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">huyu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-09-16
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/js/">js</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/%E7%BB%A7%E6%89%BF/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">继承</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/">
+            <span class="next-text nav-default">提升代码可读性，减少if-else</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/pan52yu" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>huyu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+<script>
+	function createCopyButton(highlightDiv) {
+		const div = document.createElement("div");
+		div.className = "copy-code";
+		div.innerText = "Copy";
+		div.addEventListener("click", () =>
+			copyCodeToClipboard(div, highlightDiv)
+		);
+		addCopyButtonToDom(div, highlightDiv);
+	}
+
+	async function copyCodeToClipboard(button, highlightDiv) {
+		const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+			.innerText;
+		await navigator.clipboard.writeText(codeToCopy);
+		button.blur();
+		button.innerText = "Copied!";
+		setTimeout(() => button.innerText = "Copy", 2000);
+	}
+
+	function addCopyButtonToDom(button, highlightDiv) {
+		highlightDiv.insertBefore(button, highlightDiv.firstChild);
+		const wrapper = document.createElement("div");
+		wrapper.className = "highlight-wrapper";
+		highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+		wrapper.appendChild(highlightDiv);
+	}
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if(!isMobile){
+		document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+	}
+</script>
+
+
+</body>
+</html>

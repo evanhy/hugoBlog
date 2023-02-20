@@ -35,12 +35,336 @@
     </item>
     
     <item>
+      <title>用img标签实现icon的时候对不齐文字</title>
+      <link>http://localhost:1313/post/18.%E5%88%B0%E5%BA%95%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8img%E6%A0%87%E7%AD%BE%E5%AE%9E%E7%8E%B0icon%E7%9A%84%E6%97%B6%E5%80%99%E7%BB%8F%E5%B8%B8%E5%AF%B9%E4%B8%8D%E9%BD%90%E6%96%87%E5%AD%97/</link>
+      <pubDate>Tue, 27 Dec 2022 15:38:20 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/18.%E5%88%B0%E5%BA%95%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8img%E6%A0%87%E7%AD%BE%E5%AE%9E%E7%8E%B0icon%E7%9A%84%E6%97%B6%E5%80%99%E7%BB%8F%E5%B8%B8%E5%AF%B9%E4%B8%8D%E9%BD%90%E6%96%87%E5%AD%97/</guid>
+      <description>到底为什么用img标签实现icon的时候经常对不齐文字 用img标签直接插入图片会出现对不齐的情况 因为图片的vertical-align默认是</description>
+    </item>
+    
+    <item>
       <title>我的第一篇博客</title>
       <link>http://localhost:1313/post/my-first-post/</link>
       <pubDate>Tue, 27 Dec 2022 00:54:21 +0800</pubDate>
       
       <guid>http://localhost:1313/post/my-first-post/</guid>
       <description>这是我的第一篇博客 这是我的第一篇博客 hugo new post/vscode常用插件.md</description>
+    </item>
+    
+    <item>
+      <title>vue 项目路径</title>
+      <link>http://localhost:1313/post/15.vue-%E9%A1%B9%E7%9B%AE%E8%B7%AF%E5%BE%84/</link>
+      <pubDate>Wed, 23 Nov 2022 23:21:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/15.vue-%E9%A1%B9%E7%9B%AE%E8%B7%AF%E5%BE%84/</guid>
+      <description>assets和static文件夹的区别 两个都是放置静态资源的地方，分别是src/assets文件夹和static文件夹 assets目录中的文</description>
+    </item>
+    
+    <item>
+      <title>虚拟列表</title>
+      <link>http://localhost:1313/post/21.%E8%99%9A%E6%8B%9F%E5%88%97%E8%A1%A8/</link>
+      <pubDate>Wed, 23 Nov 2022 23:18:22 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/21.%E8%99%9A%E6%8B%9F%E5%88%97%E8%A1%A8/</guid>
+      <description>todo:待整理 详情请看：https://www.huyu001.top/posts/21040.html 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17</description>
+    </item>
+    
+    <item>
+      <title>优雅的Commit信息</title>
+      <link>http://localhost:1313/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</link>
+      <pubDate>Wed, 23 Nov 2022 23:15:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</guid>
+      <description>优雅的Commit信息 使用Angular团队提交规范 主要有以下组成 标题行: 必填, 描述主要修改类型和内容 主题内容: 描述为什么修改, 做了什么样的</description>
+    </item>
+    
+    <item>
+      <title>vue.config.js配置（vue2）</title>
+      <link>http://localhost:1313/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/</link>
+      <pubDate>Wed, 23 Nov 2022 23:06:08 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/</guid>
+      <description>vue.config.js文件 这个文件导出了一个包含了选项的对象： 1 2 3 module.exports = { // 选项... } 接下来，详细介绍一些选项及配置： 基本配置 1 2 3 4</description>
+    </item>
+    
+    <item>
+      <title>富文本编辑器</title>
+      <link>http://localhost:1313/post/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</link>
+      <pubDate>Wed, 23 Nov 2022 22:15:24 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</guid>
+      <description>富文本编辑器TinyMce 引用 之前项目中有个需求，需要从word中粘贴内容到富文本编辑器里，但是图片并不能正常的显示 踩过很多坑之后，总结出t</description>
+    </item>
+    
+    <item>
+      <title>Javascript 注释规范</title>
+      <link>http://localhost:1313/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Sun, 23 Oct 2022 22:10:07 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</guid>
+      <description>Javascript 代码注释规范 一、语法 注释的说明 语法：写在注释块第一行 1 2 3 4 5 6 7 /** * events-function(这是注释的说明) * @description 切换音频播放状态</description>
+    </item>
+    
+    <item>
+      <title>前端调试代码技巧</title>
+      <link>http://localhost:1313/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Sun, 23 Oct 2022 14:19:23 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</guid>
+      <description>待完善 寻求简单有效的debug方法，少走弯路，更高效的修改bug 1、setTimeout 在我们的代码中，可能会遇到鼠标悬浮出现提示，此时想要</description>
+    </item>
+    
+    <item>
+      <title>如何优雅处理 async await 错误</title>
+      <link>http://localhost:1313/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</link>
+      <pubDate>Wed, 19 Oct 2022 10:02:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</guid>
+      <description>借用 await-to-js 库 https://github.com/scopsy/await-to-js https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/ 之前处理异步请求时是这样的： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 async asyncTask() { try { const asyncFuncARes = await asyncFuncA() } catch(error) { return new Error(error) } try { const asyncFuncBRes = await asyncFuncB(asyncFuncARes) } catch(error) { return new Error(error) } try {</description>
+    </item>
+    
+    <item>
+      <title>pdf预览</title>
+      <link>http://localhost:1313/post/04.pdf%E9%A2%84%E8%A7%88/</link>
+      <pubDate>Mon, 03 Oct 2022 14:51:21 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/04.pdf%E9%A2%84%E8%A7%88/</guid>
+      <description>参考文献 https://www.cnblogs.com/songyaru/p/15078091.html 实现方式 不使用插件直接进行pdf预览时，对于小文件没有任何问题，但在预览一个305M，近400页的pdf文件，打开pdf直接拉到最</description>
+    </item>
+    
+    <item>
+      <title>继承</title>
+      <link>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</link>
+      <pubDate>Wed, 28 Sep 2022 10:28:05 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</guid>
+      <description>首先，继承的是 属性 和 原型方法 ES6 继承 ES6：https://es6.ruanyifeng.com/#docs/class-extends Class 可以</description>
+    </item>
+    
+    <item>
+      <title>配置ESLint和Prettier</title>
+      <link>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</link>
+      <pubDate>Fri, 16 Sep 2022 14:38:37 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</guid>
+      <description>1、为什么要使用 ESLint 和 Prettier 代码规范是软件开发领域经久不衰的话题，随着前端应用的大型化和复杂化，越来越多的前端团队开始重视 JavaScript 代码规范。不以规矩，不</description>
+    </item>
+    
+    <item>
+      <title>提升代码可读性，减少if-else</title>
+      <link>http://localhost:1313/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</link>
+      <pubDate>Fri, 09 Sep 2022 15:23:18 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</guid>
+      <description>前言 相信大家或多或少都接触过拥有庞大 if else 的项目代码吧，多重嵌套的 if else 在维护的时候真的让人很恼火，有时候一个 bug 排查下来，严重感觉身体被掏空😿。</description>
+    </item>
+    
+    <item>
+      <title>判断一个对象上是否存在一个属性</title>
+      <link>http://localhost:1313/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</link>
+      <pubDate>Mon, 29 Aug 2022 20:06:43 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</guid>
+      <description>一、js判断一个对象是否为空 方法一： 1 2 3 4 5 6 7 8 9 10 let obj1 = {} let obj2 = {a:1} function empty(obj){ for (let key in obj){ return false; //非空 } return true; //为空 } console.log(empty(obj1)) // 输出 true 为空 console.log(empty(obj2)) //输出 false</description>
+    </item>
+    
+    <item>
+      <title>数字滚动</title>
+      <link>http://localhost:1313/post/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/</link>
+      <pubDate>Thu, 25 Aug 2022 15:06:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/</guid>
+      <description>数字滚动 适用场景 常用数据化大屏的echarts组件和ui组件 实现方式 使用vue-animate-number插件 使用方法 1.需要在项目终端下</description>
+    </item>
+    
+    <item>
+      <title>git高级操作</title>
+      <link>http://localhost:1313/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</link>
+      <pubDate>Sun, 21 Aug 2022 21:13:10 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</guid>
+      <description>Rebase 合并 该命令可以让和 merge 命令得到的结果基本是一致的。 通常使用 merge 操作将分支上的代码合并到 master 中，分支样子如下所示 使用 rebase 后，会将 develop 上的 commit 按顺序移到 master</description>
+    </item>
+    
+    <item>
+      <title>51world(数字孪生)</title>
+      <link>http://localhost:1313/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</link>
+      <pubDate>Sat, 18 Jun 2022 15:13:58 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</guid>
+      <description>💡 概念解释：数字孪生是充分利用物理模型、传感器更新、运行历史等数据，集成多学科、多物理量、多尺度、多概率的仿真过程，在虚拟空间中完成映射，从</description>
+    </item>
+    
+    <item>
+      <title>大屏适配</title>
+      <link>http://localhost:1313/post/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/</link>
+      <pubDate>Sun, 01 May 2022 15:02:17 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/</guid>
+      <description>适配方案 适用场景 常用数据化大屏的echarts组件和ui组件（不包含高德地图） 实现原理 css3的scale可以等比缩放内容并且不会导致元素失</description>
+    </item>
+    
+    <item>
+      <title>若依-登陆</title>
+      <link>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/</link>
+      <pubDate>Mon, 14 Mar 2022 14:48:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/</guid>
+      <description>登录(若依) 参考文献 ● https://blog.csdn.net/liuzixin_lzx/article/details/113172451 方法解析 handleLogin created中获取验证码图片（getCodeImg接口）和cookie（有cookie则填入表单） 1、表</description>
+    </item>
+    
+    <item>
+      <title>若依-菜单管理</title>
+      <link>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Sun, 13 Mar 2022 14:44:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</guid>
+      <description>菜单管理 参考文献 https://blog.csdn.net/liuzixin_lzx/article/details/113179174 菜单列表显示 1.构造树型结构数据 在utils文件夹下创建ruoyi.js 在里添加并导出下方代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14</description>
+    </item>
+    
+    <item>
+      <title>什么是Vuex</title>
+      <link>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AFvuex/</link>
+      <pubDate>Tue, 01 Mar 2022 21:08:42 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AFvuex/</guid>
+      <description>什么是vuex vue提供的一个状态管理模式，解决不同组件数据共享问题 vuex有几个属性 state state是放置所有公共状态的属性， $store.s</description>
+    </item>
+    
+    <item>
+      <title>高性能渲染十万条数据</title>
+      <link>http://localhost:1313/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sat, 26 Feb 2022 22:36:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</guid>
+      <description>在实际工作中，我们很少会遇到一次性需要向页面中插入大量数据的情况，但是为了丰富我们的知识体系，我们有必要了解并清楚当遇到大量数据时，如何才能</description>
+    </item>
+    
+    <item>
+      <title>vue知识总结</title>
+      <link>http://localhost:1313/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 11 Feb 2022 21:02:13 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <description>1、vue 修改数据页面不重新渲染 vue2是用过Object.defineProperty实现数据响应式, 组件初始化时，对 data 中的 item 进行递归遍历</description>
+    </item>
+    
+    <item>
+      <title>js知识点总结</title>
+      <link>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Wed, 09 Feb 2022 17:09:35 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <description>1、手动实现防抖和节流 防抖：事件被触发 n 秒后再执行回调，如果在这 n 秒内事件又被触发，则重新计时,，防止在短时间内过于频繁的执行相同的任务。当</description>
+    </item>
+    
+    <item>
+      <title>打印组件</title>
+      <link>http://localhost:1313/post/%E6%89%93%E5%8D%B0%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Tue, 21 Dec 2021 22:23:29 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%89%93%E5%8D%B0%E7%BB%84%E4%BB%B6/</guid>
+      <description>打印element.ui的table表单 1，首先给需要打印的元素一个id 2，在点击打印按钮的时候调用方法，在方法中传入id 3，代码会拼接成一</description>
+    </item>
+    
+    <item>
+      <title>HTTP相关知识</title>
+      <link>http://localhost:1313/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 31 Oct 2021 21:09:38 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</guid>
+      <description>Post 和 Get 的区别 先引入副作用和幂等的概念。 副作用指对服务器上的资源做改变，搜索是无副作用的，注册是副作用的。 幂等指发送 M 和 N 次请求（两者不相同且</description>
+    </item>
+    
+    <item>
+      <title>异步笔试题</title>
+      <link>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</link>
+      <pubDate>Fri, 29 Oct 2021 21:10:51 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</guid>
+      <description>异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&amp;#39;async1 start&amp;#39;); await async2(); console.log(&amp;#39;async1 end&amp;#39;); } async function async2() { console.log(&amp;#39;async2&amp;#39;); } console.log(&amp;#39;script start&amp;#39;); setTimeout(function() { console.log(&amp;#39;setTimeout&amp;#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&amp;#39;promise1&amp;#39;); resolve(); }).then(function() { console.log(&amp;#39;promise2&amp;#39;);</description>
+    </item>
+    
+    <item>
+      <title>H5-C3知识点总结</title>
+      <link>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 29 Oct 2021 21:06:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <description>1、盒子水平垂直局中的方法 flex 布局 1 2 3 4 5 6 7 8 9 10 11 12 13 14 /* html代码: */ &amp;lt;div class=&amp;#34;wrap&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; /* CSS代码： */ .wrap{ /* 设置为弹性布局 */ display: flex; /* 子元素在</description>
+    </item>
+    
+    <item>
+      <title>element-ui封装table组件</title>
+      <link>http://localhost:1313/post/08.element-ui%E5%B0%81%E8%A3%85table%E7%BB%84%E4%BB%B6/</link>
+      <pubDate>Fri, 01 Oct 2021 21:48:11 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/08.element-ui%E5%B0%81%E8%A3%85table%E7%BB%84%E4%BB%B6/</guid>
+      <description>myTable 组件 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67</description>
+    </item>
+    
+    <item>
+      <title>HTTP缓存</title>
+      <link>http://localhost:1313/post/11.http%E7%BC%93%E5%AD%98/</link>
+      <pubDate>Wed, 29 Sep 2021 21:09:41 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/11.http%E7%BC%93%E5%AD%98/</guid>
+      <description>https://juejin.cn/post/6844904153043435533#heading-1</description>
+    </item>
+    
+    <item>
+      <title>执行Hexo d报错</title>
+      <link>http://localhost:1313/post/%E6%89%A7%E8%A1%8Chexo-d%E6%8A%A5%E9%94%99/</link>
+      <pubDate>Wed, 11 Aug 2021 21:46:31 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E6%89%A7%E8%A1%8Chexo-d%E6%8A%A5%E9%94%99/</guid>
+      <description>执行hexo g -d构建时报错 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 $ hexo d INFO Deploying: git INFO Clearing .deploy_git folder... INFO Copying files from public folder...</description>
+    </item>
+    
+    <item>
+      <title>hexo常用命令</title>
+      <link>http://localhost:1313/post/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link>
+      <pubDate>Sun, 01 Aug 2021 14:20:40 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid>
+      <description>1 2 3 4 5 6 hexo new &amp;#34;postName&amp;#34; #新建文章 hexo new page &amp;#34;pageName&amp;#34; #新建页面 hexo generate #生成静态页面至public目录 简写：hexo g hexo server #开启预览访问端口（默认端口4000，</description>
+    </item>
+    
+    <item>
+      <title>使用nvm切换node版本</title>
+      <link>http://localhost:1313/post/17.%E4%BD%BF%E7%94%A8nvm%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</link>
+      <pubDate>Sat, 31 Jul 2021 16:26:04 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/17.%E4%BD%BF%E7%94%A8nvm%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</guid>
+      <description>下载nvm（在nvm中下载nodejs，无需提前安装nodejs） https://github.com/coreybutler/nvm-windows/releases 选择安装位置： 使用命令nvm判断是否安装成功 安装nodejs 1、查看可安</description>
+    </item>
+    
+    <item>
+      <title>常用正则</title>
+      <link>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99/</link>
+      <pubDate>Sat, 20 Feb 2021 15:09:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99/</guid>
+      <description>常用正则 📞号码相关 ●手机号（以 1 开头）：/^(?:(?:+|00)86)?1\d{10}$/ ●手机号（以 13 至19 开头）：/^(?:(?:+|</description>
+    </item>
+    
+    <item>
+      <title>那些好用的网站</title>
+      <link>http://localhost:1313/post/%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</link>
+      <pubDate>Tue, 29 Oct 2002 21:12:30 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</guid>
+      <description>TODO&amp;hellip; https://yuchengkai.cn/ https://www.developers.pub/wiki/1065322 https://es6.ruanyifeng.com/ https://zh.javascript.info/</description>
+    </item>
+    
+    <item>
+      <title>从0到1搭建博客</title>
+      <link>http://localhost:1313/post/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 20 Oct 2002 14:13:49 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>待完成&amp;hellip; https://blog.csdn.net/yaorongke/article/details/119089190 链接</description>
     </item>
     
   </channel>

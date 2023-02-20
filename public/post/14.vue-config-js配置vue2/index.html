@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>vue.config.js配置（vue2） - Huyu&#39; Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="huyu" /><meta name="description" content="config.js" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.105.0 with theme even" />
+
+
+<link rel="canonical" href="http://localhost:1313/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.a7c3372b17782ac7f2fa8c3cd7f2508f64a1456f433e3f82db4be08802b35f05.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="vue.config.js配置（vue2）" />
+<meta property="og:description" content="config.js" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2022-11-23T23:06:08+00:00" />
+<meta property="article:modified_time" content="2022-11-23T23:06:08+00:00" />
+
+<meta itemprop="name" content="vue.config.js配置（vue2）">
+<meta itemprop="description" content="config.js"><meta itemprop="datePublished" content="2022-11-23T23:06:08+00:00" />
+<meta itemprop="dateModified" content="2022-11-23T23:06:08+00:00" />
+<meta itemprop="wordCount" content="4297">
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="vue.config.js配置（vue2）"/>
+<meta name="twitter:description" content="config.js"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Huyu&#39; Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Huyu&#39; Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">vue.config.js配置（vue2）</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-11-23 </span>
+        
+          <span class="more-meta"> 约 4297 字 </span>
+          <span class="more-meta"> 预计阅读 9 分钟 </span>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#vueconfigjs文件">vue.config.js文件</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#基本配置">基本配置</a></li>
+            <li><a href="#插件及规则的配置">插件及规则的配置</a></li>
+            <li><a href="#规则rules的配置">规则rules的配置</a></li>
+            <li><a href="#插件plugins-的配置">插件plugins 的配置</a></li>
+            <li><a href="#一些常见的配置">一些常见的配置</a></li>
+            <li><a href="#附上一份-vueconfigjs-配置">附上一份 vue.config.js 配置</a></li>
+            <li><a href="#详细的配置">详细的配置</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="vueconfigjs文件">vue.config.js文件</h1>
+<p>这个文件导出了一个包含了选项的对象：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 选项...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>接下来，详细介绍一些选项及配置：</p>
+<h3 id="基本配置">基本配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">productionSourceMap</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">publicPath</span><span class="o">:</span> <span class="s1">&#39;./&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">outputDir</span><span class="o">:</span> <span class="s1">&#39;dist&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsDir</span><span class="o">:</span> <span class="s1">&#39;assets&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">devServer</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">port</span><span class="o">:</span> <span class="mi">8090</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">https</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">open</span><span class="o">:</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 其他配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">...</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>productionSourceMap</code>：生产环境是否要生成 <code>sourceMap</code></p>
+<p><code>publicPath</code>：部署应用包时的基本 URL,用法和 <code>webpack</code> 本身的 <code>output.publicPath</code> 一致</p>
+<p>可以通过三元运算去配置<code>dev</code>和<code>prod</code>环境,</p>
+<blockquote>
+<p><code>publicPath: process.env.NODE_ENV === 'production' ? '/prod/' : './'</code></p>
+</blockquote>
+<p><code>outputDir</code>: <code>build</code> 时输出的文件目录</p>
+<p><code>assetsDir</code>: 放置静态文件夹目录</p>
+<p><code>devServer</code>: dev环境下，<code>webpack-dev-server</code> 相关配置</p>
+<ul>
+<li>port: 开发运行时的端口</li>
+<li>host: 开发运行时域名，设置成<code>'0.0.0.0'</code>,在同一个局域网下，如果你的项目在运行，同时可以通过你的http://ip:port/&hellip;访问你的项目</li>
+<li>https: 是否启用 <code>https</code></li>
+<li>open: <code>npm run serve</code> 时是否直接打开浏览器</li>
+</ul>
+<h3 id="插件及规则的配置">插件及规则的配置</h3>
+<p>在<code>vue.config.js</code>如果要新增/修改 <code>webpack</code> 的 <code>plugins</code> 或者 <code>rules</code> , 有2种方式。</p>
+<p><code>configureWebpack</code> 方式</p>
+<p><code>configureWebpack</code> 是相对比较简单的一种方式</p>
+<ul>
+<li>它可以是一个对象：和 <code>webpack</code> 本身配置方式是一致，该对象将会被 <code>webpack-merge</code> 合并入最终的 <code>webpack</code> 配置</li>
+<li>它也可以是一个函数：直接在函数内部进行修改配置</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">configureWebpack</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">rules</span><span class="o">:</span><span class="p">[],</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">plugins</span><span class="o">:</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="nx">configureWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 例如，通过判断运行环境，设置mode
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="nx">config</span><span class="p">.</span><span class="nx">mode</span> <span class="o">=</span> <span class="s1">&#39;production&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><code>chainWebpack</code> 方式</p>
+<p><code>chainWebpack</code> 链式操作 (高级)，接下来所有的配置我都会在该选项中进行配置</p>
+<h3 id="规则rules的配置">规则rules的配置</h3>
+<p>关于<code>rules</code> 的配置，我会分别从新增/修改进行介绍。</p>
+<h4 id="rules的新增">rules的新增</h4>
+<p>在<code>webpack</code>中 <code>rules</code> 是 <code>module</code> 的配置项，而所有的配置的都是挂载到 <code>config</code> 下的，所以新增一个rule方式：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">module</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nx">loader</span><span class="p">(</span><span class="nx">loader</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nx">options</span><span class="p">(</span><span class="nx">options</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：<code>style-resources-loader</code> 来添加<code>less</code>全局变量</p>
+<p>案例：<code>svg-sprite-loader</code> 将svg图片以雪碧图的方式在项目中加载</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 通过 style-resources-loader 来添加less全局变量
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="kr">const</span> <span class="nx">types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;vue-modules&#39;</span><span class="p">,</span> <span class="s1">&#39;vue&#39;</span><span class="p">,</span> <span class="s1">&#39;normal-modules&#39;</span><span class="p">,</span> <span class="s1">&#39;normal&#39;</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">types</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">type</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">let</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">module</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;less&#39;</span><span class="p">).</span><span class="nx">oneOf</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">rule</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;style-resource&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">loader</span><span class="p">(</span><span class="s1">&#39;style-resources-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">options</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">patterns</span><span class="o">:</span> <span class="p">[</span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;./lessVariates.less&#39;</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">                <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="p">});</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// `svg-sprite-loader`: 将svg图片以雪碧图的方式在项目中加载
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">module</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="sr">/.svg$/</span><span class="p">)</span> <span class="c1">// 匹配svg文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">.</span><span class="nx">include</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/svg&#39;</span><span class="p">))</span> <span class="c1">// 主要匹配src/svg
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">.</span><span class="nx">end</span><span class="p">()</span> 
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;svg-sprite-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">loader</span><span class="p">(</span><span class="s1">&#39;svg-sprite-loader&#39;</span><span class="p">)</span> <span class="c1">// 使用的loader，主要要npm该插件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">.</span><span class="nx">options</span><span class="p">({</span><span class="nx">symbolId</span><span class="o">:</span> <span class="s1">&#39;svg-[name]&#39;</span><span class="p">})</span> <span class="c1">// 参数配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="rules的修改">rules的修改</h4>
+<p>针对已经存在的 <code>rule</code> , 如果需要修改它的参数, 可以使用 <code>tap</code> 方法：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">module</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">      <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">options</span> <span class="p">=&gt;</span> <span class="nx">newOptions</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：修改<code>url-loader</code>的参数</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// `url-loader`是webpack默认已经配置的，现在我们来修改它的参数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">module</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;images&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;url-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">options</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;./assets/images/[name].[ext]&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">quality</span><span class="o">:</span> <span class="mi">85</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">limit</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">esModule</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}))</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="插件plugins-的配置">插件plugins 的配置</h3>
+<p>关于 <code>plugins</code> 的配置，我会分别从<code>新增/修改/删除</code>进行介绍。</p>
+<h4 id="plugins的新增">plugins的新增</h4>
+<ul>
+<li>注意：这里WebpackPlugin不需要通过<code>new WebpackPlugin()</code>使用。</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">  <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">WebpackPlugin</span><span class="p">,</span> <span class="nx">args</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：新增<code>hot-hash-webpack-plugin</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HotHashWebpackPlugin</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;hot-hash-webpack-plugin&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 新增一个`hot-hash-webpack-plugin`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="c1">// 注意：这里use的时候不需要使用`new HotHashWebpackPlugin()`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;hotHash&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">              <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="nx">HotHashWebpackPlugin</span><span class="p">,</span> <span class="p">[{</span> <span class="nx">version</span><span class="o">:</span> <span class="s1">&#39;1.0.0&#39;</span> <span class="p">}]);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="plugins的修改">plugins的修改</h4>
+<p>同理, <code>plugin</code> 参数的修改也是通过 <code>tap</code> 去修改。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="nx">newArgs</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：修改打包后<code>css</code>抽离后的<code>filename</code>及抽离所属目录</p>
+<p>案例：删除<code>console</code>和<code>debugger</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HotHashWebpackPlugin</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;hot-hash-webpack-plugin&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 修改打包时css抽离后的filename及抽离所属目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;extract-css&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">[{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;css/[name].[contenthash:8].css&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">chunkFilename</span><span class="o">:</span> <span class="s1">&#39;css/[name].[contenthash:8].css&#39;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}]);</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 正式环境下，删除console和debugger
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">optimization</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">minimize</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">minimizer</span><span class="p">(</span><span class="s1">&#39;terser&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="p">{</span> <span class="nx">terserOptions</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">terserOptions</span><span class="p">.</span><span class="nx">compress</span><span class="p">.</span><span class="nx">drop_console</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">terserOptions</span><span class="p">.</span><span class="nx">compress</span><span class="p">.</span><span class="nx">drop_debugger</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="nx">args</span>
+</span></span><span class="line"><span class="cl">                <span class="p">});</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="plugins的删除">plugins的删除</h4>
+<p>对于一些<code>webpack</code>默认的 <code>plugin</code> ，如果不需要可以进行删除</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">plugins</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>案例：删除 <code>vue-cli3.X</code> 模块的自动分割抽离</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">(</span><span class="nx">config</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// vue-cli3.X 会自动进行模块分割抽离，如果不需要进行分割,可以手动删除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">config</span><span class="p">.</span><span class="nx">optimization</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="s1">&#39;splitChunks&#39;</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="一些常见的配置">一些常见的配置</h3>
+<h4 id="修改enter文件">修改enter文件</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">entryPoints</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span> <span class="c1">// 清空默认入口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">config</span><span class="p">.</span><span class="nx">entry</span><span class="p">(</span><span class="s1">&#39;test&#39;</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="nx">getPath</span><span class="p">(</span><span class="s1">&#39;./test/main.ts&#39;</span><span class="p">));</span> <span class="c1">// 重新设置
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="defineplugin">DefinePlugin</h4>
+<p>定义全局全局变量，<code>DefinePlugin</code> 是 <code>webpack</code> 已经默认配置的，我们可以对参数进行修改</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;define&#39;</span><span class="p">).</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">[{</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">...</span><span class="nx">args</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;window.isDefine&#34;</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="kc">true</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}]);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="自定义filename-及-chunkfilename">自定义filename 及 chunkFilename</h4>
+<p>自定义打包后js文件的路径及文件名字</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">output</span><span class="p">.</span><span class="nx">filename</span><span class="p">(</span><span class="s1">&#39;./js/[name].[chunkhash:8].js&#39;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">output</span><span class="p">.</span><span class="nx">chunkFilename</span><span class="p">(</span><span class="s1">&#39;./js/[name].[chunkhash:8].js&#39;</span><span class="p">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="修改html-webpack-plugin参数">修改html-webpack-plugin参数</h4>
+<p><code>html-webpack-plugin</code> 是 <code>webpack</code> 已经默认配置的，默认的源模版文件是 <code>public/index.html</code> ;我们可以对其参数进行修改</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"> <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;html&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">options</span> <span class="p">=&gt;</span> <span class="p">[{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;../../index.html&#39;</span> <span class="c1">// 修改源模版文件
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;test&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}]);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h4 id="设置别名alias">设置别名alias</h4>
+<p><code>webpack</code>默认是将<code>src</code>的别名设置为<code>@</code>, 此外，我们可以进行添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="nx">config</span><span class="p">.</span><span class="nx">resolve</span><span class="p">.</span><span class="nx">alias</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">))</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;api&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/apis&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;common&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/common&#39;</span><span class="p">))</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="附上一份-vueconfigjs-配置">附上一份 vue.config.js 配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">path</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">HotHashWebpackPlugin</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;hot-hash-webpack-plugin&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">WebpackBar</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;webpackbar&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">resolve</span> <span class="o">=</span> <span class="nx">dir</span> <span class="p">=&gt;</span> <span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;.&#39;</span><span class="p">,</span> <span class="nx">dir</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">productionSourceMap</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">publicPath</span><span class="o">:</span> <span class="s1">&#39;./&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">outputDir</span><span class="o">:</span> <span class="s1">&#39;dist&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsDir</span><span class="o">:</span> <span class="s1">&#39;assets&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">devServer</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">port</span><span class="o">:</span> <span class="mi">9999</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">https</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">open</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="nx">config</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kr">const</span> <span class="nx">types</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;vue-modules&#39;</span><span class="p">,</span> <span class="s1">&#39;vue&#39;</span><span class="p">,</span> <span class="s1">&#39;normal-modules&#39;</span><span class="p">,</span> <span class="s1">&#39;normal&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">types</span><span class="p">.</span><span class="nx">forEach</span><span class="p">(</span><span class="nx">type</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kd">let</span> <span class="nx">rule</span> <span class="o">=</span> <span class="nx">config</span><span class="p">.</span><span class="nx">module</span><span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;less&#39;</span><span class="p">).</span><span class="nx">oneOf</span><span class="p">(</span><span class="nx">type</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">rule</span><span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;style-resource&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">loader</span><span class="p">(</span><span class="s1">&#39;style-resources-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">options</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">patterns</span><span class="o">:</span> <span class="p">[</span><span class="nx">path</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="nx">__dirname</span><span class="p">,</span> <span class="s1">&#39;./lessVariates.less&#39;</span><span class="p">)],</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">config</span><span class="p">.</span><span class="nx">resolve</span><span class="p">.</span><span class="nx">alias</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;@&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;api&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/apis&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">set</span><span class="p">(</span><span class="s1">&#39;common&#39;</span><span class="p">,</span> <span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/common&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">config</span><span class="p">.</span><span class="nx">module</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;images&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;url-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">options</span> <span class="p">=&gt;</span> <span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;./assets/images/[name].[ext]&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">quality</span><span class="o">:</span> <span class="mi">85</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">limit</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">esModule</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}))</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">config</span><span class="p">.</span><span class="nx">module</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">rule</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">test</span><span class="p">(</span><span class="sr">/.svg$/</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">include</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="nx">resolve</span><span class="p">(</span><span class="s1">&#39;src/svg&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">end</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">use</span><span class="p">(</span><span class="s1">&#39;svg-sprite-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">.</span><span class="nx">loader</span><span class="p">(</span><span class="s1">&#39;svg-sprite-loader&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;define&#39;</span><span class="p">).</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="p">...</span><span class="nx">args</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s1">&#39;window.isDefine&#39;</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="kc">true</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 生产环境配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="p">(</span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NODE_ENV</span> <span class="o">===</span> <span class="s1">&#39;production&#39;</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">output</span><span class="p">.</span><span class="nx">filename</span><span class="p">(</span><span class="s1">&#39;./js/[name].[chunkhash:8].js&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">output</span><span class="p">.</span><span class="nx">chunkFilename</span><span class="p">(</span><span class="s1">&#39;./js/[name].[chunkhash:8].js&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;extract-css&#39;</span><span class="p">).</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;css/[name].[contenthash:8].css&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">chunkFilename</span><span class="o">:</span> <span class="s1">&#39;css/[name].[contenthash:8].css&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">])</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;hotHash&#39;</span><span class="p">).</span><span class="nx">use</span><span class="p">(</span><span class="nx">HotHashWebpackPlugin</span><span class="p">,</span> <span class="p">[{</span> <span class="nx">version</span><span class="o">:</span> <span class="s1">&#39;1.0.0&#39;</span> <span class="p">}])</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">plugin</span><span class="p">(</span><span class="s1">&#39;webpackBar&#39;</span><span class="p">).</span><span class="nx">use</span><span class="p">(</span><span class="nx">WebpackBar</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">optimization</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">minimize</span><span class="p">(</span><span class="kc">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">minimizer</span><span class="p">(</span><span class="s1">&#39;terser&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">.</span><span class="nx">tap</span><span class="p">(</span><span class="nx">args</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="kd">let</span> <span class="p">{</span> <span class="nx">terserOptions</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">args</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">terserOptions</span><span class="p">.</span><span class="nx">compress</span><span class="p">.</span><span class="nx">drop_console</span> <span class="o">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">terserOptions</span><span class="p">.</span><span class="nx">compress</span><span class="p">.</span><span class="nx">drop_debugger</span> <span class="o">=</span> <span class="kc">true</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="nx">args</span>
+</span></span><span class="line"><span class="cl">                <span class="p">})</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">config</span><span class="p">.</span><span class="nx">optimization</span><span class="p">.</span><span class="nx">splitChunks</span><span class="p">({</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">cacheGroups</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">common</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;common&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">chunks</span><span class="o">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">minSize</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">minChunks</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">priority</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">vendor</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">name</span><span class="o">:</span> <span class="s1">&#39;chunk-libs&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">chunks</span><span class="o">:</span> <span class="s1">&#39;all&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">test</span><span class="o">:</span> <span class="sr">/[\/]node_modules[\/]/</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                        <span class="nx">priority</span><span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">})</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="详细的配置">详细的配置</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">    根据Vue Cli配置的一些常用配置项, 具体参考(https://cli.vuejs.org/zh/config/#pages)
+</span></span></span><span class="line"><span class="cl"><span class="cm">*/</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">productionSourceMap</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// 生成环境是否开启SourceMap(source map的作用就是定位。source map定位的时浏览器控制台输出语句在项目文件的位置。)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">filenameHashing</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// build之后生成的静态资源默认情况下加了hash值以控制静态资源的缓存，默认是true
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">publicPath</span><span class="o">:</span> <span class="s1">&#39;./&#39;</span><span class="p">,</span> <span class="c1">// 部署应用包时的基本 URL(可以通过三元运算去配置dev和prod环境, publicPath: process.env.NODE_ENV === &#39;production&#39; ? &#39;/prod/&#39; : &#39;./&#39;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">indexPath</span><span class="o">:</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="c1">// 指定生成的 index.html 的输出路径 (相对于 outputDir)。也可以是一个绝对路径。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">outputDir</span><span class="o">:</span> <span class="s1">&#39;dist&#39;</span><span class="p">,</span> <span class="c1">// 打包输出文件目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">assetsDir</span><span class="o">:</span> <span class="s1">&#39;assets&#39;</span><span class="p">,</span> <span class="c1">// 放置静态文件夹目录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">lintOnSave</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 是否在开发环境下通过 eslint-loader 在每次保存时 lint 代码。这个值会在 @vue/cli-plugin-eslint 被安装之后生效。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">runtimeCompiler</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 是否使用包含运行时编译器的 Vue 构建版本
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">transpileDependencies</span><span class="o">:</span> <span class="p">[],</span> <span class="c1">// Babel 显式转译列表
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">crossorigin</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="c1">// 设置生成的 HTML 中 &lt;link rel=&#34;stylesheet&#34;&gt; 和 &lt;script&gt; 标签的 crossorigin 属性（注：仅影响构建时注入的标签）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">integrity</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// 在生成的 HTML 中的 &lt;link rel=&#34;stylesheet&#34;&gt; 和 &lt;script&gt; 标签上启用 Subresource Integrity (SRI)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">        如果这个值是一个对象，则会通过 webpack-merge 合并到最终的配置中 
+</span></span></span><span class="line"><span class="cl"><span class="cm">        如果你需要基于环境有条件地配置行为，或者想要直接修改配置，那就换成一个函数 (该函数会在环境变量被设置之后懒执行)。该方法的第一个参数会收到已经解析好的配置。在函数内，你可以直接修改配置，或者返回一个将会被合并的对象
+</span></span></span><span class="line"><span class="cl"><span class="cm">    */</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">configureWebpack</span><span class="o">:</span> <span class="p">{},</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">chainWebpack</span><span class="o">:</span> <span class="p">()</span> <span class="p">=&gt;</span> <span class="p">{},</span> <span class="c1">// 对内部的 webpack 配置（比如修改、增加Loader选项）(链式操作)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">pages</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 构建多页面应用，页面的配置
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">index</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">entry</span><span class="o">:</span> <span class="s1">&#39;src/index/main.js&#39;</span><span class="p">,</span> <span class="c1">// page 的入口
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="nx">template</span><span class="o">:</span> <span class="s1">&#39;public/index.html&#39;</span><span class="p">,</span> <span class="c1">// 模板来源
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="nx">filename</span><span class="o">:</span> <span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="c1">// 在 dist/index.html 的输出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="nx">title</span><span class="o">:</span> <span class="s1">&#39;Index Page&#39;</span><span class="p">,</span> <span class="c1">// 当使用 title 选项时， template 中的 title 标签需要是 &lt;title&gt;&lt;%= htmlWebpackPlugin.options.title %&gt;&lt;/title&gt;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">            <span class="nx">chunks</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;chunk-vendors&#39;</span><span class="p">,</span> <span class="s1">&#39;chunk-common&#39;</span><span class="p">,</span> <span class="s1">&#39;index&#39;</span><span class="p">],</span> <span class="c1">// 在这个页面中包含的块，默认情况下会包含 提取出来的通用 chunk 和 vendor chunk。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">            当使用只有入口的字符串格式时，
+</span></span></span><span class="line"><span class="cl"><span class="cm">            模板会被推导为 `public/subpage.html`
+</span></span></span><span class="line"><span class="cl"><span class="cm">            并且如果找不到的话，就回退到 `public/index.html`。
+</span></span></span><span class="line"><span class="cl"><span class="cm">            输出文件名会被推导为 `subpage.html`。
+</span></span></span><span class="line"><span class="cl"><span class="cm">        */</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">subpage</span><span class="o">:</span> <span class="s1">&#39;src/subpage/main.js&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">devServer</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// dev环境  NodeJs架设临时的服务器用于项目的运行与调试
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">open</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 是否运行好直接在默认浏览器打开
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">inline</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 用于设置代码保存时是否自动刷新页面。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">hot</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 用于设置代码保存时是否进行热更新（局部刷新，不刷新整个页面）。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">openPage</span><span class="o">:</span> <span class="s1">&#39;default/index&#39;</span><span class="p">,</span> <span class="c1">//指定deserver 编译完成后自动打开的页面 (注意：需要配合 open来使用。如果Vue router 为 hash mode。应在url前面补上/#。如：openPage: &#39;/#/about&#39;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">https</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// 用于设置是否启用https
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">port</span><span class="o">:</span> <span class="mi">8024</span><span class="p">,</span> <span class="c1">// 指定要监听请求的端口号
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">host</span><span class="o">:</span> <span class="s1">&#39;0.0.0.0&#39;</span><span class="p">,</span> <span class="c1">// 用于指定devDerve使用的host
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">compress</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 对devServer 所有服务启用 gzip 压缩
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">headers</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 在所有响应中添加首部内容
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="s1">&#39;X-Custom-Foo&#39;</span><span class="o">:</span> <span class="s1">&#39;bar&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="cm">/* 当出现编译器错误或警告时，在浏览器中显示全屏覆盖层。默认禁用。两种写法*/</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// overlay: true, // 第一种
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">overlay</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 第二种
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">warnings</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 警告
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="nx">errors</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 错误
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">proxy</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// proxy:{&#39;/api&#39;:{}},代理器中设置/api,项目中请求路径为/api的替换为target
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="s1">&#39;/api&#39;</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">target</span><span class="o">:</span> <span class="s1">&#39;http://127.0.0.10:3000&#39;</span><span class="p">,</span> <span class="c1">// 代理的服务器，也就是api要访问的服务器
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">ws</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 是否代理websocket,
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">secure</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// 是否使用HTTPS协议, 默认false
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">changeOrigin</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 将主机头的来源更改为目标URL，也就是是否允许跨域
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">pathRewrite</span><span class="o">:</span> <span class="p">{</span> <span class="s1">&#39;^/api&#39;</span><span class="o">:</span> <span class="s1">&#39;&#39;</span> <span class="p">},</span> <span class="c1">// 重写url的path部分
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    pathRewrite详解
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    现在这样两个 api:
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    (1): http://localhost:80/api/login
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    (2): /api/login
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    devServe.proxy 会匹配第二个，因为第二个以/api开头，而第一个以http开头。
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    再例如有这样的 api：/getUserInfo，其所在的服务器为http://192.168.0.169。那这个 api 的url 就应该是http://192.168.0.169/getUserInfo。
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    然后在 axios 配置的 route 是 /api/getUserinfo。
+</span></span></span><span class="line"><span class="cl"><span class="cm">                    这样配置之后，devServer.proxy 就能把 url 改写成http://192.168.0.169/getUserInfo
+</span></span></span><span class="line"><span class="cl"><span class="cm">                */</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">css</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nx">extract</span><span class="o">:</span> <span class="kc">false</span><span class="p">,</span> <span class="c1">// 是否使用css分离插件 ExtractTextPlugin  开启extract后，组件样式以内部样式表的形式加载的, 打包的结果会多出一个 css 文件夹以及css 文件。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">sourceMap</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 开启 CSS source maps?
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 因为配置了loaderOptions.css, 尽管requireModuleExtension的值为默认值，我们也需要指出
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">requireModuleExtension</span><span class="o">:</span> <span class="kc">true</span><span class="p">,</span> <span class="c1">// 用于设定，是否只有 *.module.[ext] 结尾的文件才会被视作CSS Modules 模块。 默认情况下，只有文件名中含有.modules的CSS相关文件还能使用CSS Modules。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="nx">loaderOptions</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//用于向 CSS 相关的 loader 传递选项（设置）。
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="cm">/* 
+</span></span></span><span class="line"><span class="cl"><span class="cm">               注意：以下配置在 Vue CLI v4 与 v3 之间存在差异。
+</span></span></span><span class="line"><span class="cl"><span class="cm">               Vue CLI v3 用户可参考 css-loader v1 文档
+</span></span></span><span class="line"><span class="cl"><span class="cm">               https://github.com/webpack-contrib/css-loader/tree/v1.0.1 
+</span></span></span><span class="line"><span class="cl"><span class="cm">            */</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">css</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 配置 CSS Modules 的class命名规则
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">modules</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">localIdentName</span><span class="o">:</span> <span class="s1">&#39;[local]_[hash:base64:8]&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">postcss</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 这里的选项会传递给 postcss-loader
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">sass</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// @/ 是 src/ 的别名 所以这里假设你有 `src/variables.sass` 这个文件 (注意：在 sass-loader v7 中，这个选项名是 &#34;data&#34;)
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">prependData</span><span class="o">:</span> <span class="sb">`@import &#34;~@/variables.sass&#34;`</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="cm">/*
+</span></span></span><span class="line"><span class="cl"><span class="cm">                默认情况下 `sass` 选项会同时对 `sass` 和 `scss` 语法同时生效, 因为 `scss` 语法在内部也是由 sass-loader 处理的;
+</span></span></span><span class="line"><span class="cl"><span class="cm">                但是在配置 `data` 选项的时候, `scss` 语法会要求语句结尾必须有分号，`sass` 则要求必须没有分号 在这种情况下，我们可以使用 `scss` 选项，对 `scss` 语法进行单独配置
+</span></span></span><span class="line"><span class="cl"><span class="cm">            */</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">scss</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="nx">prependData</span><span class="o">:</span> <span class="sb">`@import &#34;~@/variables.scss&#34;;`</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="nx">less</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 给 less-loader 传递 Less.js 相关选项
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">// http://lesscss.org/usage/#less-options-strict-units `Global Variables`
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="c1">// `primary` is global variables fields name
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>                <span class="nx">globalVars</span><span class="o">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="nx">primary</span><span class="o">:</span> <span class="s1">&#39;#fff&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="p">},</span>
+</span></span><span class="line"><span class="cl">            <span class="p">},</span>
+</span></span><span class="line"><span class="cl">        <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nx">parallel</span><span class="o">:</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;os&#39;</span><span class="p">).</span><span class="nx">cpus</span><span class="p">().</span><span class="nx">length</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">,</span> <span class="c1">// 是否为 Babel 或 TypeScript 使用 thread-loader
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">pwa</span><span class="o">:</span> <span class="p">{},</span> <span class="c1">// 向 PWA 插件传递选项
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>
+</span></span><span class="line"><span class="cl">    <span class="nx">pluginOptions</span><span class="o">:</span> <span class="p">{},</span> <span class="c1">// 可以用来传递任何第三方插件选项
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">huyu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-11-23
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      
+      <nav class="post-nav">
+        <a class="prev" href="/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">优雅的Commit信息</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/">
+            <span class="next-text nav-default">富文本编辑器</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:your@email.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://localhost:1313" class="iconfont icon-stack-overflow" title="stack-overflow"></a>
+      <a href="http://localhost:1313" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="http://localhost:1313" class="iconfont icon-facebook" title="facebook"></a>
+      <a href="http://localhost:1313" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="http://localhost:1313" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/pan52yu" class="iconfont icon-github" title="github"></a>
+      <a href="http://localhost:1313" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="http://localhost:1313" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="http://localhost:1313" class="iconfont icon-douban" title="douban"></a>
+      <a href="http://localhost:1313" class="iconfont icon-pocket" title="pocket"></a>
+      <a href="http://localhost:1313" class="iconfont icon-tumblr" title="tumblr"></a>
+      <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
+      <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>huyu</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+<script>
+	function createCopyButton(highlightDiv) {
+		const div = document.createElement("div");
+		div.className = "copy-code";
+		div.innerText = "Copy";
+		div.addEventListener("click", () =>
+			copyCodeToClipboard(div, highlightDiv)
+		);
+		addCopyButtonToDom(div, highlightDiv);
+	}
+
+	async function copyCodeToClipboard(button, highlightDiv) {
+		const codeToCopy = highlightDiv.querySelector(":last-child > .chroma > code")
+			.innerText;
+		await navigator.clipboard.writeText(codeToCopy);
+		button.blur();
+		button.innerText = "Copied!";
+		setTimeout(() => button.innerText = "Copy", 2000);
+	}
+
+	function addCopyButtonToDom(button, highlightDiv) {
+		highlightDiv.insertBefore(button, highlightDiv.firstChild);
+		const wrapper = document.createElement("div");
+		wrapper.className = "highlight-wrapper";
+		highlightDiv.parentNode.insertBefore(wrapper, highlightDiv);
+		wrapper.appendChild(highlightDiv);
+	}
+
+	var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+	if(!isMobile){
+		document.querySelectorAll(".highlight").forEach((highlightDiv) => createCopyButton(highlightDiv));
+	}
+</script>
+
+
+</body>
+</html>

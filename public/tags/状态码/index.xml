@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>状态码 on Huyu&#39; Blog</title>
+    <link>http://localhost:1313/tags/%E7%8A%B6%E6%80%81%E7%A0%81/</link>
+    <description>Recent content in 状态码 on Huyu&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 31 Oct 2021 21:09:38 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E7%8A%B6%E6%80%81%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTTP相关知识</title>
+      <link>http://localhost:1313/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</link>
+      <pubDate>Sun, 31 Oct 2021 21:09:38 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</guid>
+      <description>Post 和 Get 的区别 先引入副作用和幂等的概念。 副作用指对服务器上的资源做改变，搜索是无副作用的，注册是副作用的。 幂等指发送 M 和 N 次请求（两者不相同且</description>
+    </item>
+    
+  </channel>
+</rss>

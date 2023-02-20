@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>css on Huyu&#39; Blog</title>
+    <link>http://localhost:1313/tags/css/</link>
+    <description>Recent content in css on Huyu&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 29 Oct 2021 21:06:46 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>H5-C3知识点总结</title>
+      <link>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 29 Oct 2021 21:06:46 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <description>1、盒子水平垂直局中的方法 flex 布局 1 2 3 4 5 6 7 8 9 10 11 12 13 14 /* html代码: */ &amp;lt;div class=&amp;#34;wrap&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; /* CSS代码： */ .wrap{ /* 设置为弹性布局 */ display: flex; /* 子元素在</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>提升 on Huyu&#39; Blog</title>
+    <link>http://localhost:1313/categories/%E6%8F%90%E5%8D%87/</link>
+    <description>Recent content in 提升 on Huyu&#39; Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 16 Sep 2022 14:38:37 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>配置ESLint和Prettier</title>
+      <link>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</link>
+      <pubDate>Fri, 16 Sep 2022 14:38:37 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</guid>
+      <description>1、为什么要使用 ESLint 和 Prettier 代码规范是软件开发领域经久不衰的话题，随着前端应用的大型化和复杂化，越来越多的前端团队开始重视 JavaScript 代码规范。不以规矩，不</description>
+    </item>
+    
+    <item>
+      <title>高性能渲染十万条数据</title>
+      <link>http://localhost:1313/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</link>
+      <pubDate>Sat, 26 Feb 2022 22:36:14 +0000</pubDate>
+      
+      <guid>http://localhost:1313/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</guid>
+      <description>在实际工作中，我们很少会遇到一次性需要向页面中插入大量数据的情况，但是为了丰富我们的知识体系，我们有必要了解并清楚当遇到大量数据时，如何才能</description>
+    </item>
+    
+  </channel>
+</rss>
