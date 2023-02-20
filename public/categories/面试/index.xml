@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>面试 on Huyu&#39; Blog</title>
-    <link>http://localhost:1313/categories/%E9%9D%A2%E8%AF%95/</link>
-    <description>Recent content in 面试 on Huyu&#39; Blog</description>
+    <title>面试 on Huyu&#39;s Blog</title>
+    <link>https://www.huyu6.top/categories/%E9%9D%A2%E8%AF%95/</link>
+    <description>Recent content in 面试 on Huyu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 11 Feb 2022 21:02:13 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Feb 2022 21:02:13 +0000</lastBuildDate><atom:link href="https://www.huyu6.top/categories/%E9%9D%A2%E8%AF%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>vue知识总结</title>
-      <link>http://localhost:1313/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
+      <link>https://www.huyu6.top/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 11 Feb 2022 21:02:13 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://www.huyu6.top/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</guid>
       <description>1、vue 修改数据页面不重新渲染 vue2是用过Object.defineProperty实现数据响应式, 组件初始化时，对 data 中的 item 进行递归遍历</description>
     </item>
     
     <item>
       <title>js知识点总结</title>
-      <link>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <link>https://www.huyu6.top/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
       <pubDate>Wed, 09 Feb 2022 17:09:35 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://www.huyu6.top/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
       <description>1、手动实现防抖和节流 防抖：事件被触发 n 秒后再执行回调，如果在这 n 秒内事件又被触发，则重新计时,，防止在短时间内过于频繁的执行相同的任务。当</description>
     </item>
     
     <item>
       <title>异步笔试题</title>
-      <link>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</link>
+      <link>https://www.huyu6.top/post/27.%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</link>
       <pubDate>Fri, 29 Oct 2021 21:10:51 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</guid>
+      <guid>https://www.huyu6.top/post/27.%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</guid>
       <description>异步笔试题 请写出下面代码的运行结果 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 async function async1() { console.log(&amp;#39;async1 start&amp;#39;); await async2(); console.log(&amp;#39;async1 end&amp;#39;); } async function async2() { console.log(&amp;#39;async2&amp;#39;); } console.log(&amp;#39;script start&amp;#39;); setTimeout(function() { console.log(&amp;#39;setTimeout&amp;#39;); }, 0) async1(); new Promise(function(resolve) { console.log(&amp;#39;promise1&amp;#39;); resolve(); }).then(function() { console.log(&amp;#39;promise2&amp;#39;);</description>
     </item>
     
     <item>
       <title>H5-C3知识点总结</title>
-      <link>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
+      <link>https://www.huyu6.top/post/23.h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</link>
       <pubDate>Fri, 29 Oct 2021 21:06:46 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
+      <guid>https://www.huyu6.top/post/23.h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</guid>
       <description>1、盒子水平垂直局中的方法 flex 布局 1 2 3 4 5 6 7 8 9 10 11 12 13 14 /* html代码: */ &amp;lt;div class=&amp;#34;wrap&amp;#34;&amp;gt; &amp;lt;div class=&amp;#34;box&amp;#34;&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; /* CSS代码： */ .wrap{ /* 设置为弹性布局 */ display: flex; /* 子元素在</description>
     </item>
     

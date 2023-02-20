@@ -1,478 +1,436 @@
-<?xml-stylesheet type="text/xsl" href="http://localhost:1313/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://www.huyu6.top/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.huyu6.top/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</loc>
+    <lastmod>2022-09-16T14:38:37+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huyu6.top/</loc>
     <lastmod>2023-02-17T17:18:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/</loc>
+    <loc>https://www.huyu6.top/post/</loc>
     <lastmod>2023-02-17T17:18:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://www.huyu6.top/post/02.vue3%E9%A1%B9%E7%9B%AE%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-02-17T17:18:34+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
+    <loc>https://www.huyu6.top/post/01.vscode%E5%B8%B8%E7%94%A8%E6%8F%92%E4%BB%B6/</loc>
     <lastmod>2023-02-17T17:15:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>https://www.huyu6.top/about/</loc>
     <lastmod>2023-02-17T13:00:51+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.huyu6.top/tags/</loc>
     <lastmod>2022-12-27T15:38:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://www.huyu6.top/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-12-27T15:38:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/18.%E5%88%B0%E5%BA%95%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8img%E6%A0%87%E7%AD%BE%E5%AE%9E%E7%8E%B0icon%E7%9A%84%E6%97%B6%E5%80%99%E7%BB%8F%E5%B8%B8%E5%AF%B9%E4%B8%8D%E9%BD%90%E6%96%87%E5%AD%97/</loc>
+    <loc>https://www.huyu6.top/post/18.%E5%88%B0%E5%BA%95%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%A8img%E6%A0%87%E7%AD%BE%E5%AE%9E%E7%8E%B0icon%E7%9A%84%E6%97%B6%E5%80%99%E7%BB%8F%E5%B8%B8%E5%AF%B9%E4%B8%8D%E9%BD%90%E6%96%87%E5%AD%97/</loc>
     <lastmod>2022-12-27T15:38:20+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2022-12-27T00:54:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/hugo/</loc>
-    <lastmod>2022-12-27T00:54:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/my-first-post/</loc>
-    <lastmod>2022-12-27T00:54:21+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/vue/</loc>
+    <loc>https://www.huyu6.top/tags/vue/</loc>
     <lastmod>2022-11-23T23:21:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/15.vue-%E9%A1%B9%E7%9B%AE%E8%B7%AF%E5%BE%84/</loc>
+    <loc>https://www.huyu6.top/post/15.vue-%E9%A1%B9%E7%9B%AE%E8%B7%AF%E5%BE%84/</loc>
     <lastmod>2022-11-23T23:21:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E6%8F%90%E5%8D%87/</loc>
+    <loc>https://www.huyu6.top/tags/%E6%8F%90%E5%8D%87/</loc>
     <lastmod>2022-11-23T23:18:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/21.%E8%99%9A%E6%8B%9F%E5%88%97%E8%A1%A8/</loc>
+    <loc>https://www.huyu6.top/post/21.%E8%99%9A%E6%8B%9F%E5%88%97%E8%A1%A8/</loc>
     <lastmod>2022-11-23T23:18:22+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/git/</loc>
+    <loc>https://www.huyu6.top/tags/git/</loc>
     <lastmod>2022-11-23T23:15:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</loc>
+    <loc>https://www.huyu6.top/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</loc>
     <lastmod>2022-11-23T23:15:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/</loc>
+    <loc>https://www.huyu6.top/post/14.vue-config-js%E9%85%8D%E7%BD%AEvue2/</loc>
     <lastmod>2022-11-23T23:06:08+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
+    <loc>https://www.huyu6.top/post/25.%E5%AF%8C%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8/</loc>
     <lastmod>2022-11-23T22:15:24+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
+    <loc>https://www.huyu6.top/post/12.javascript-%E6%B3%A8%E9%87%8A%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2022-10-23T22:10:07+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/js/</loc>
+    <loc>https://www.huyu6.top/tags/js/</loc>
     <lastmod>2022-10-23T22:10:07+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</loc>
+    <loc>https://www.huyu6.top/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/</loc>
     <lastmod>2022-10-23T14:19:23+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/axios/</loc>
+    <loc>https://www.huyu6.top/tags/axios/</loc>
     <lastmod>2022-10-19T10:02:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</loc>
+    <loc>https://www.huyu6.top/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/</loc>
     <lastmod>2022-10-19T10:02:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/04.pdf%E9%A2%84%E8%A7%88/</loc>
+    <loc>https://www.huyu6.top/post/04.pdf%E9%A2%84%E8%A7%88/</loc>
     <lastmod>2022-10-03T14:51:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/js/</loc>
+    <loc>https://www.huyu6.top/categories/</loc>
     <lastmod>2022-09-28T10:28:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</loc>
+    <loc>https://www.huyu6.top/categories/js/</loc>
     <lastmod>2022-09-28T10:28:05+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/</loc>
+    <loc>https://www.huyu6.top/post/31.%E7%BB%A7%E6%89%BF/</loc>
+    <lastmod>2022-09-28T10:28:05+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.huyu6.top/categories/%E6%8F%90%E5%8D%87/</loc>
     <lastmod>2022-09-16T14:38:37+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%8F%90%E5%8D%87/</loc>
-    <lastmod>2022-09-16T14:38:37+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/</loc>
+    <loc>https://www.huyu6.top/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2022-09-09T15:23:18+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</loc>
+    <loc>https://www.huyu6.top/post/29.%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</loc>
     <lastmod>2022-09-09T15:23:18+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</loc>
+    <loc>https://www.huyu6.top/post/06.%E5%88%A4%E6%96%AD%E4%B8%80%E4%B8%AA%E5%AF%B9%E8%B1%A1%E4%B8%8A%E6%98%AF%E5%90%A6%E5%AD%98%E5%9C%A8%E4%B8%80%E4%B8%AA%E5%B1%9E%E6%80%A7/</loc>
     <lastmod>2022-08-29T20:06:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/</loc>
+    <loc>https://www.huyu6.top/post/30.%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/</loc>
     <lastmod>2022-08-25T15:06:11+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</loc>
+    <loc>https://www.huyu6.top/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</loc>
     <lastmod>2022-08-21T21:13:10+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</loc>
+    <loc>https://www.huyu6.top/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</loc>
     <lastmod>2022-06-18T15:13:58+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</loc>
+    <loc>https://www.huyu6.top/categories/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/</loc>
     <lastmod>2022-06-18T15:13:58+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/</loc>
+    <loc>https://www.huyu6.top/post/24.%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/</loc>
     <lastmod>2022-05-01T15:02:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E9%80%82%E9%85%8D/</loc>
+    <loc>https://www.huyu6.top/tags/%E9%80%82%E9%85%8D/</loc>
     <lastmod>2022-05-01T15:02:17+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://www.huyu6.top/categories/%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2022-03-14T14:48:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E8%8B%A5%E4%BE%9D/</loc>
+    <loc>https://www.huyu6.top/tags/%E8%8B%A5%E4%BE%9D/</loc>
     <lastmod>2022-03-14T14:48:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/</loc>
+    <loc>https://www.huyu6.top/post/32.%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/</loc>
     <lastmod>2022-03-14T14:48:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</loc>
+    <loc>https://www.huyu6.top/post/33.%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/</loc>
     <lastmod>2022-03-13T14:44:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E4%BB%80%E4%B9%88%E6%98%AFvuex/</loc>
+    <loc>https://www.huyu6.top/post/34.%E4%BB%80%E4%B9%88%E6%98%AFvuex/</loc>
     <lastmod>2022-03-01T21:08:42+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</loc>
+    <loc>https://www.huyu6.top/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/</loc>
     <lastmod>2022-02-26T22:36:14+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://www.huyu6.top/post/16.vue%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2022-02-11T21:02:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/categories/%E9%9D%A2%E8%AF%95/</loc>
+    <loc>https://www.huyu6.top/categories/%E9%9D%A2%E8%AF%95/</loc>
     <lastmod>2022-02-11T21:02:13+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://www.huyu6.top/post/13.js%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2022-02-09T17:09:35+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E6%89%93%E5%8D%B0%E7%BB%84%E4%BB%B6/</loc>
+    <loc>https://www.huyu6.top/post/28.%E6%89%93%E5%8D%B0%E7%BB%84%E4%BB%B6/</loc>
     <lastmod>2021-12-21T22:23:29+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/dns/</loc>
+    <loc>https://www.huyu6.top/tags/dns/</loc>
     <lastmod>2021-10-31T21:09:38+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/http/</loc>
+    <loc>https://www.huyu6.top/tags/http/</loc>
     <lastmod>2021-10-31T21:09:38+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</loc>
+    <loc>https://www.huyu6.top/post/10.http%E7%9B%B8%E5%85%B3%E7%9F%A5%E8%AF%86/</loc>
     <lastmod>2021-10-31T21:09:38+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E7%8A%B6%E6%80%81%E7%A0%81/</loc>
+    <loc>https://www.huyu6.top/tags/%E7%8A%B6%E6%80%81%E7%A0%81/</loc>
     <lastmod>2021-10-31T21:09:38+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
+    <loc>https://www.huyu6.top/post/27.%E5%BC%82%E6%AD%A5%E7%AC%94%E8%AF%95%E9%A2%98/</loc>
     <lastmod>2021-10-29T21:10:51+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/css/</loc>
+    <loc>https://www.huyu6.top/tags/css/</loc>
     <lastmod>2021-10-29T21:06:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
+    <loc>https://www.huyu6.top/post/23.h5-c3%E7%9F%A5%E8%AF%86%E7%82%B9%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2021-10-29T21:06:46+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/element-ui/</loc>
+    <loc>https://www.huyu6.top/tags/element-ui/</loc>
     <lastmod>2021-10-01T21:48:11+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/08.element-ui%E5%B0%81%E8%A3%85table%E7%BB%84%E4%BB%B6/</loc>
+    <loc>https://www.huyu6.top/post/08.element-ui%E5%B0%81%E8%A3%85table%E7%BB%84%E4%BB%B6/</loc>
     <lastmod>2021-10-01T21:48:11+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/11.http%E7%BC%93%E5%AD%98/</loc>
+    <loc>https://www.huyu6.top/post/11.http%E7%BC%93%E5%AD%98/</loc>
     <lastmod>2021-09-29T21:09:41+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/hexo/</loc>
-    <lastmod>2021-08-11T21:46:31+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/%E6%89%A7%E8%A1%8Chexo-d%E6%8A%A5%E9%94%99/</loc>
-    <lastmod>2021-08-11T21:46:31+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
-    <lastmod>2021-08-01T14:20:40+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/tags/nvm/</loc>
+    <loc>https://www.huyu6.top/tags/nvm/</loc>
     <lastmod>2021-07-31T16:26:04+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/17.%E4%BD%BF%E7%94%A8nvm%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</loc>
+    <loc>https://www.huyu6.top/post/17.%E4%BD%BF%E7%94%A8nvm%E5%88%87%E6%8D%A2node%E7%89%88%E6%9C%AC/</loc>
     <lastmod>2021-07-31T16:26:04+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99/</loc>
+    <loc>https://www.huyu6.top/post/26.%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99/</loc>
     <lastmod>2021-02-20T15:09:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/post/%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</loc>
+    <loc>https://www.huyu6.top/post/%E9%82%A3%E4%BA%9B%E5%A5%BD%E7%94%A8%E7%9A%84%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2002-10-29T21:12:30+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E6%95%88%E7%8E%87/</loc>
+    <loc>https://www.huyu6.top/tags/%E6%95%88%E7%8E%87/</loc>
     <lastmod>2002-10-29T21:12:30+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>http://localhost:1313/tags/%E5%AD%A6%E4%B9%A0/</loc>
+    <loc>https://www.huyu6.top/tags/%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2002-10-29T21:12:30+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/post/%E4%BB%8E0%E5%88%B01%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
-    <lastmod>2002-10-20T14:13:49+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Huyu&#39; Blog</title>
+  <title>Huyu&#39;s Blog</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -26,9 +26,9 @@
 <meta name="generator" content="Hugo 0.105.0 with theme even" />
 
 
-<link rel="canonical" href="http://localhost:1313/" />
-  <link href="http://localhost:1313/index.xml" rel="alternate" type="application/rss+xml" title="Huyu&#39; Blog" />
-  <link href="http://localhost:1313/index.xml" rel="feed" type="application/rss+xml" title="Huyu&#39; Blog" />
+<link rel="canonical" href="https://www.huyu6.top/" />
+  <link href="https://www.huyu6.top/index.xml" rel="alternate" type="application/rss+xml" title="Huyu&#39;s Blog" />
+  <link href="https://www.huyu6.top/index.xml" rel="feed" type="application/rss+xml" title="Huyu&#39;s Blog" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -41,14 +41,14 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Huyu&#39; Blog" />
+<meta property="og:title" content="Huyu&#39;s Blog" />
 <meta property="og:description" content="Hugo theme even example site." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="http://localhost:1313/" />
+<meta property="og:url" content="https://www.huyu6.top/" />
 
-<meta itemprop="name" content="Huyu&#39; Blog">
+<meta itemprop="name" content="Huyu&#39;s Blog">
 <meta itemprop="description" content="Hugo theme even example site."><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Huyu&#39; Blog"/>
+<meta name="twitter:title" content="Huyu&#39;s Blog"/>
 <meta name="twitter:description" content="Hugo theme even example site."/>
 
 <!--[if lte IE 9]>
@@ -64,7 +64,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">Huyu&#39; Blog</a>
+    <a href="/" class="logo">Huyu&#39;s Blog</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -95,7 +95,7 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">Huyu&#39; Blog</a>
+  <a href="/" class="logo">Huyu&#39;s Blog</a>
 </div>
 
 
@@ -126,109 +126,176 @@
           <section id="posts" class="posts">
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/">前端调试代码技巧</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/30.%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/">数字滚动</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-23 </span>
+      <span class="post-time"> 2022-08-25 </span>
       
-        <span class="more-meta"> 约 647 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
-    </div>
-  </header>
-  
-  <div class="post-content">
-    <div class="post-summary">
-      待完善 寻求简单有效的debug方法，少走弯路，更高效的修改bug 1、setTimeout 在我们的代码中，可能会遇到鼠标悬浮出现提示，此时想要
-    </div>
-    <div class="read-more">
-      <a href="/post/19.%E5%89%8D%E7%AB%AF%E8%B0%83%E8%AF%95%E4%BB%A3%E7%A0%81%E6%8A%80%E5%B7%A7/" class="read-more-link">阅读更多</a>
-    </div>
-  </div>
-</article>
-
-    <article class="post">
-  <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/">如何优雅处理 async await 错误</a></h1>
-    <div class="post-meta">
-      <span class="post-time"> 2022-10-19 </span>
-      
-        <span class="more-meta"> 约 427 字 </span>
+        <span class="more-meta"> 约 199 字 </span>
         <span class="more-meta"> 预计阅读 1 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      借用 await-to-js 库 https://github.com/scopsy/await-to-js https://blog.grossman.io/how-to-write-async-await-without-try-catch-blocks-in-javascript/ 之前处理异步请求时是这样的： 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 async asyncTask() { try { const asyncFuncARes = await asyncFuncA() } catch(error) { return new Error(error) } try { const asyncFuncBRes = await asyncFuncB(asyncFuncARes) } catch(error) { return new Error(error) } try {
+      数字滚动 适用场景 常用数据化大屏的echarts组件和ui组件 实现方式 使用vue-animate-number插件 使用方法 1.需要在项目终端下
     </div>
     <div class="read-more">
-      <a href="/post/20.%E5%A6%82%E4%BD%95%E4%BC%98%E9%9B%85%E5%A4%84%E7%90%86-async-await-%E9%94%99%E8%AF%AF/" class="read-more-link">阅读更多</a>
+      <a href="/post/30.%E6%95%B0%E5%AD%97%E6%BB%9A%E5%8A%A8/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/04.pdf%E9%A2%84%E8%A7%88/">pdf预览</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/">git高级操作</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-10-03 </span>
+      <span class="post-time"> 2022-08-21 </span>
       
-        <span class="more-meta"> 约 780 字 </span>
+        <span class="more-meta"> 约 561 字 </span>
         <span class="more-meta"> 预计阅读 2 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      参考文献 https://www.cnblogs.com/songyaru/p/15078091.html 实现方式 不使用插件直接进行pdf预览时，对于小文件没有任何问题，但在预览一个305M，近400页的pdf文件，打开pdf直接拉到最
+      Rebase 合并 该命令可以让和 merge 命令得到的结果基本是一致的。 通常使用 merge 操作将分支上的代码合并到 master 中，分支样子如下所示 使用 rebase 后，会将 develop 上的 commit 按顺序移到 master
     </div>
     <div class="read-more">
-      <a href="/post/04.pdf%E9%A2%84%E8%A7%88/" class="read-more-link">阅读更多</a>
+      <a href="/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/%E7%BB%A7%E6%89%BF/">继承</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/">51world(数字孪生)</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-09-28 </span>
+      <span class="post-time"> 2022-06-18 </span>
       <div class="post-category">
-          <a href="/categories/js/"> js </a>
+          <a href="/categories/%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/"> 数字孪生 </a>
           </div>
-        <span class="more-meta"> 约 762 字 </span>
-        <span class="more-meta"> 预计阅读 2 分钟 </span>
+        <span class="more-meta"> 约 3010 字 </span>
+        <span class="more-meta"> 预计阅读 7 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      首先，继承的是 属性 和 原型方法 ES6 继承 ES6：https://es6.ruanyifeng.com/#docs/class-extends Class 可以
+      💡 概念解释：数字孪生是充分利用物理模型、传感器更新、运行历史等数据，集成多学科、多物理量、多尺度、多概率的仿真过程，在虚拟空间中完成映射，从
     </div>
     <div class="read-more">
-      <a href="/post/%E7%BB%A7%E6%89%BF/" class="read-more-link">阅读更多</a>
+      <a href="/post/07.51world-%E6%95%B0%E5%AD%97%E5%AD%AA%E7%94%9F/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
 
     <article class="post">
   <header class="post-header">
-    <h1 class="post-title"><a class="post-link" href="/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/">配置ESLint和Prettier</a></h1>
+    <h1 class="post-title"><a class="post-link" href="/post/24.%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/">大屏适配</a></h1>
     <div class="post-meta">
-      <span class="post-time"> 2022-09-16 </span>
+      <span class="post-time"> 2022-05-01 </span>
+      
+        <span class="more-meta"> 约 428 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      适配方案 适用场景 常用数据化大屏的echarts组件和ui组件（不包含高德地图） 实现原理 css3的scale可以等比缩放内容并且不会导致元素失
+    </div>
+    <div class="read-more">
+      <a href="/post/24.%E5%A4%A7%E5%B1%8F%E9%80%82%E9%85%8D/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/32.%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/">若依-登陆</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-14 </span>
+      <div class="post-category">
+          <a href="/categories/%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F/"> 后台系统 </a>
+          </div>
+        <span class="more-meta"> 约 649 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      登录(若依) 参考文献 ● https://blog.csdn.net/liuzixin_lzx/article/details/113172451 方法解析 handleLogin created中获取验证码图片（getCodeImg接口）和cookie（有cookie则填入表单） 1、表
+    </div>
+    <div class="read-more">
+      <a href="/post/32.%E8%8B%A5%E4%BE%9D-%E7%99%BB%E9%99%86/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/33.%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/">若依-菜单管理</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-13 </span>
+      <div class="post-category">
+          <a href="/categories/%E5%90%8E%E5%8F%B0%E7%B3%BB%E7%BB%9F/"> 后台系统 </a>
+          </div>
+        <span class="more-meta"> 约 784 字 </span>
+        <span class="more-meta"> 预计阅读 2 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      菜单管理 参考文献 https://blog.csdn.net/liuzixin_lzx/article/details/113179174 菜单列表显示 1.构造树型结构数据 在utils文件夹下创建ruoyi.js 在里添加并导出下方代码 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+    </div>
+    <div class="read-more">
+      <a href="/post/33.%E8%8B%A5%E4%BE%9D-%E8%8F%9C%E5%8D%95%E7%AE%A1%E7%90%86/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/34.%E4%BB%80%E4%B9%88%E6%98%AFvuex/">什么是Vuex</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-03-01 </span>
+      
+        <span class="more-meta"> 约 481 字 </span>
+        <span class="more-meta"> 预计阅读 1 分钟 </span>
+    </div>
+  </header>
+  
+  <div class="post-content">
+    <div class="post-summary">
+      什么是vuex vue提供的一个状态管理模式，解决不同组件数据共享问题 vuex有几个属性 state state是放置所有公共状态的属性， $store.s
+    </div>
+    <div class="read-more">
+      <a href="/post/34.%E4%BB%80%E4%B9%88%E6%98%AFvuex/" class="read-more-link">阅读更多</a>
+    </div>
+  </div>
+</article>
+
+    <article class="post">
+  <header class="post-header">
+    <h1 class="post-title"><a class="post-link" href="/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/">高性能渲染十万条数据</a></h1>
+    <div class="post-meta">
+      <span class="post-time"> 2022-02-26 </span>
       <div class="post-category">
           <a href="/categories/%E6%8F%90%E5%8D%87/"> 提升 </a>
           </div>
-        <span class="more-meta"> 约 1487 字 </span>
-        <span class="more-meta"> 预计阅读 3 分钟 </span>
+        <span class="more-meta"> 约 5007 字 </span>
+        <span class="more-meta"> 预计阅读 10 分钟 </span>
     </div>
   </header>
   
   <div class="post-content">
     <div class="post-summary">
-      1、为什么要使用 ESLint 和 Prettier 代码规范是软件开发领域经久不衰的话题，随着前端应用的大型化和复杂化，越来越多的前端团队开始重视 JavaScript 代码规范。不以规矩，不
+      在实际工作中，我们很少会遇到一次性需要向页面中插入大量数据的情况，但是为了丰富我们的知识体系，我们有必要了解并清楚当遇到大量数据时，如何才能
     </div>
     <div class="read-more">
-      <a href="/post/03.%E9%85%8D%E7%BD%AEeslint%E5%92%8Cprettier/" class="read-more-link">阅读更多</a>
+      <a href="/post/22.%E9%AB%98%E6%80%A7%E8%83%BD%E6%B8%B2%E6%9F%93%E5%8D%81%E4%B8%87%E6%9D%A1%E6%95%B0%E6%8D%AE/" class="read-more-link">阅读更多</a>
     </div>
   </div>
 </article>
@@ -268,7 +335,7 @@
       <a href="http://localhost:1313" class="iconfont icon-instagram" title="instagram"></a>
       <a href="http://localhost:1313" class="iconfont icon-gitlab" title="gitlab"></a>
       <a href="http://localhost:1313" class="iconfont icon-bilibili" title="bilibili"></a>
-  <a href="http://localhost:1313/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+  <a href="https://www.huyu6.top/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">

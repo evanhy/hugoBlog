@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>js on Huyu&#39; Blog</title>
-    <link>http://localhost:1313/categories/js/</link>
-    <description>Recent content in js on Huyu&#39; Blog</description>
+    <title>js on Huyu&#39;s Blog</title>
+    <link>https://www.huyu6.top/categories/js/</link>
+    <description>Recent content in js on Huyu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 28 Sep 2022 10:28:05 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Sep 2022 10:28:05 +0000</lastBuildDate><atom:link href="https://www.huyu6.top/categories/js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>继承</title>
-      <link>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</link>
+      <link>https://www.huyu6.top/post/31.%E7%BB%A7%E6%89%BF/</link>
       <pubDate>Wed, 28 Sep 2022 10:28:05 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E7%BB%A7%E6%89%BF/</guid>
+      <guid>https://www.huyu6.top/post/31.%E7%BB%A7%E6%89%BF/</guid>
       <description>首先，继承的是 属性 和 原型方法 ES6 继承 ES6：https://es6.ruanyifeng.com/#docs/class-extends Class 可以</description>
     </item>
     

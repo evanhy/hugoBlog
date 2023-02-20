@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>代码优化 on Huyu&#39; Blog</title>
-    <link>http://localhost:1313/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/</link>
-    <description>Recent content in 代码优化 on Huyu&#39; Blog</description>
+    <title>代码优化 on Huyu&#39;s Blog</title>
+    <link>https://www.huyu6.top/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/</link>
+    <description>Recent content in 代码优化 on Huyu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Sep 2022 15:23:18 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Sep 2022 15:23:18 +0000</lastBuildDate><atom:link href="https://www.huyu6.top/categories/%E4%BB%A3%E7%A0%81%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>提升代码可读性，减少if-else</title>
-      <link>http://localhost:1313/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</link>
+      <link>https://www.huyu6.top/post/29.%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</link>
       <pubDate>Fri, 09 Sep 2022 15:23:18 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</guid>
+      <guid>https://www.huyu6.top/post/29.%E6%8F%90%E5%8D%87%E4%BB%A3%E7%A0%81%E5%8F%AF%E8%AF%BB%E6%80%A7%E5%87%8F%E5%B0%91if-else/</guid>
       <description>前言 相信大家或多或少都接触过拥有庞大 if else 的项目代码吧，多重嵌套的 if else 在维护的时候真的让人很恼火，有时候一个 bug 排查下来，严重感觉身体被掏空😿。</description>
     </item>
     

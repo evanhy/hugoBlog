@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>git on Huyu&#39; Blog</title>
-    <link>http://localhost:1313/tags/git/</link>
-    <description>Recent content in git on Huyu&#39; Blog</description>
+    <title>git on Huyu&#39;s Blog</title>
+    <link>https://www.huyu6.top/tags/git/</link>
+    <description>Recent content in git on Huyu&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 23 Nov 2022 23:15:17 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 23 Nov 2022 23:15:17 +0000</lastBuildDate><atom:link href="https://www.huyu6.top/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>优雅的Commit信息</title>
-      <link>http://localhost:1313/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</link>
+      <link>https://www.huyu6.top/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</link>
       <pubDate>Wed, 23 Nov 2022 23:15:17 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</guid>
+      <guid>https://www.huyu6.top/post/05.%E4%BC%98%E9%9B%85%E7%9A%84commit%E4%BF%A1%E6%81%AF/</guid>
       <description>优雅的Commit信息 使用Angular团队提交规范 主要有以下组成 标题行: 必填, 描述主要修改类型和内容 主题内容: 描述为什么修改, 做了什么样的</description>
     </item>
     
     <item>
       <title>git高级操作</title>
-      <link>http://localhost:1313/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</link>
+      <link>https://www.huyu6.top/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</link>
       <pubDate>Sun, 21 Aug 2022 21:13:10 +0000</pubDate>
       
-      <guid>http://localhost:1313/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</guid>
+      <guid>https://www.huyu6.top/post/09.git%E9%AB%98%E7%BA%A7%E6%93%8D%E4%BD%9C/</guid>
       <description>Rebase 合并 该命令可以让和 merge 命令得到的结果基本是一致的。 通常使用 merge 操作将分支上的代码合并到 master 中，分支样子如下所示 使用 rebase 后，会将 develop 上的 commit 按顺序移到 master</description>
     </item>
     
